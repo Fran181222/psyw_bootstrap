@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder para hero</title>
+  <desc id="desc">Imagen de reemplazo para video o portada principal.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#123458"/>
+      <stop offset="50%" stop-color="#1f6e8c"/>
+      <stop offset="100%" stop-color="#d4a373"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1320" cy="160" r="120" fill="rgba(255,255,255,.15)"/>
+  <circle cx="240" cy="720" r="180" fill="rgba(255,255,255,.1)"/>
+  <rect x="180" y="210" width="1240" height="480" rx="24" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.35)" stroke-width="3" stroke-dasharray="14 14"/>
+  <text x="800" y="390" fill="#fff7e8" font-family="Segoe UI, Arial, sans-serif" font-size="62" text-anchor="middle">REEMPLAZAR POR VIDEO O IMAGEN HERO</text>
+  <text x="800" y="470" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="30" text-anchor="middle">Deja este archivo como referencia visual mientras agregas tu recurso final</text>
+</svg>

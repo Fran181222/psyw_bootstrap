@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BooTsTrap | Destinos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark glass-nav fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold brand-link" href="index.html">
+          <span class="brand-plane"><i class="bi bi-send-fill"></i></span>
+          <span class="brand-wordmark">BooTsTrap</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDestinos">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarDestinos">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explorar</a>
+              <div class="dropdown-menu mega-menu">
+                <div class="row g-3">
+                  <div class="col-lg-6">
+                    <h6 class="text-uppercase text-muted small">Secciones</h6>
+                    <a class="dropdown-item" href="destinos.html"><i class="bi bi-map me-2"></i>Destinos y precios</a>
+                    <a class="dropdown-item" href="agencias.html"><i class="bi bi-buildings me-2"></i>Agencias</a>
+                    <a class="dropdown-item" href="blog.html"><i class="bi bi-newspaper me-2"></i>Blog</a>
+                  </div>
+                  <div class="col-lg-6">
+                    <h6 class="text-uppercase text-muted small">Utilidades</h6>
+                    <a class="dropdown-item" href="contacto.html"><i class="bi bi-envelope-paper me-2"></i>Contacto</a>
+                    <a class="dropdown-item" href="precios.html"><i class="bi bi-cash-coin me-2"></i>Comparativa</a>
+                    <a class="dropdown-item" href="phishing.html"><i class="bi bi-shield-check me-2"></i>Modulo educativo</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            <li class="nav-item mt-3 mt-lg-0 ms-lg-2">
+              <a class="btn btn-brand rounded-pill px-4" href="destinos.html"><i class="bi bi-airplane-engines me-2"></i>Planificar viaje</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="page-header">
+      <div class="container">
+        <span class="eyebrow"><i class="bi bi-map"></i>Destinos</span>
+        <h1 class="display-5 fw-bold mt-3">Filtros dinamicos, grid responsive y tabla de precios</h1>
+        <p class="col-lg-8 fs-5">La grilla adapta 1, 2 o 3 columnas segun pantalla. Reemplaza las imagenes placeholder por fotos reales del destino.</p>
+      </div>
+    </header>
+
+    <main class="py-5">
+      <section class="container">
+        <div class="d-flex flex-wrap gap-2 mb-4">
+          <button class="btn btn-primary filter-chip active" data-filter="all">Todos</button>
+          <button class="btn btn-outline-primary filter-chip" data-filter="nacional">Nacionales</button>
+          <button class="btn btn-outline-primary filter-chip" data-filter="internacional">Internacionales</button>
+          <button class="btn btn-outline-primary filter-chip" data-filter="aventura">Aventura</button>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-xl-4 filter-item" data-category="nacional">
+            <article class="card destination-card h-100">
+              <div class="media-frame"><img src="img/placeholder-card.svg" alt="Placeholder Quebrada" /></div>
+              <div class="card-body p-4">
+                <h2 class="h4">Quebrada de Humahuaca</h2>
+                <p class="text-muted">Ideal para turismo cultural y paisajes del norte argentino.</p>
+                <span class="destination-tag"><i class="bi bi-signpost-split"></i>Nacional</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4 filter-item" data-category="aventura">
+            <article class="card destination-card h-100">
+              <div class="media-frame"><img src="img/placeholder-card.svg" alt="Placeholder Patagonia" /></div>
+              <div class="card-body p-4">
+                <h2 class="h4">Patagonia aventura</h2>
+                <p class="text-muted">Espacio para trekkings, glaciares y escapadas de naturaleza.</p>
+                <span class="destination-tag"><i class="bi bi-tree"></i>Aventura</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4 filter-item" data-category="internacional">
+            <article class="card destination-card h-100">
+              <div class="media-frame"><img src="img/placeholder-card.svg" alt="Placeholder Europa" /></div>
+              <div class="card-body p-4">
+                <h2 class="h4">Europa clasica</h2>
+                <p class="text-muted">Perfecta para circuitos urbanos, museos y salidas internacionales.</p>
+                <span class="destination-tag"><i class="bi bi-globe-europe-africa"></i>Internacional</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4 filter-item" data-category="nacional">
+            <article class="card destination-card h-100">
+              <div class="media-frame"><img src="img/placeholder-card.svg" alt="Placeholder Cataratas" /></div>
+              <div class="card-body p-4">
+                <h2 class="h4">Cataratas</h2>
+                <p class="text-muted">Estructura lista para turismo de selva, agua y naturaleza.</p>
+                <span class="destination-tag"><i class="bi bi-water"></i>Nacional</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4 filter-item" data-category="internacional">
+            <article class="card destination-card h-100">
+              <div class="media-frame"><img src="img/placeholder-card.svg" alt="Placeholder Caribe" /></div>
+              <div class="card-body p-4">
+                <h2 class="h4">Caribe premium</h2>
+                <p class="text-muted">Pensada para mostrar playas, resort y paquetes all inclusive.</p>
+                <span class="destination-tag"><i class="bi bi-brightness-high"></i>Internacional</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4 filter-item" data-category="aventura">
+            <article class="card destination-card h-100">
+              <div class="media-frame"><img src="img/placeholder-card.svg" alt="Placeholder montaña" /></div>
+              <div class="card-body p-4">
+                <h2 class="h4">Circuito de montana</h2>
+                <p class="text-muted">Card lista para excursiones, senderismo y experiencias activas.</p>
+                <span class="destination-tag"><i class="bi bi-activity"></i>Aventura</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4 filter-item" data-category="nacional">
+            <article class="card destination-card h-100">
+              <div class="media-frame"><img src="img/placeholder-card.svg" alt="Placeholder sierras" /></div>
+              <div class="card-body p-4">
+                <h2 class="h4">Sierras y descanso</h2>
+                <p class="text-muted">Perfecta para escapadas tranquilas, cabanas y turismo regional.</p>
+                <span class="destination-tag"><i class="bi bi-house-heart"></i>Nacional</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4 filter-item" data-category="internacional">
+            <article class="card destination-card h-100">
+              <div class="media-frame"><img src="img/placeholder-card.svg" alt="Placeholder Asia" /></div>
+              <div class="card-body p-4">
+                <h2 class="h4">Asia urbana</h2>
+                <p class="text-muted">Lista para circuitos modernos, neon, cultura y experiencias gastronomicas.</p>
+                <span class="destination-tag"><i class="bi bi-globe-central-south-asia"></i>Internacional</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4 filter-item" data-category="aventura">
+            <article class="card destination-card h-100">
+              <div class="media-frame"><img src="img/placeholder-card.svg" alt="Placeholder Selva" /></div>
+              <div class="card-body p-4">
+                <h2 class="h4">Selva profunda</h2>
+                <p class="text-muted">Espacio para actividades de ecoturismo, travesias y experiencias intensas.</p>
+                <span class="destination-tag"><i class="bi bi-binoculars"></i>Aventura</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4 filter-item" data-category="internacional">
+            <article class="card destination-card h-100">
+              <div class="media-frame"><img src="img/placeholder-card.svg" alt="Placeholder Mediterraneo" /></div>
+              <div class="card-body p-4">
+                <h2 class="h4">Mediterraneo azul</h2>
+                <p class="text-muted">Ideal para sumar cruceros, islas, playas o rutas historicas junto al mar.</p>
+                <span class="destination-tag"><i class="bi bi-water"></i>Internacional</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4 filter-item" data-category="nacional">
+            <article class="card destination-card h-100">
+              <div class="media-frame"><img src="img/placeholder-card.svg" alt="Placeholder Vino" /></div>
+              <div class="card-body p-4">
+                <h2 class="h4">Ruta del vino</h2>
+                <p class="text-muted">Preparada para promocionar bodegas, relax y turismo gastronomico.</p>
+                <span class="destination-tag"><i class="bi bi-cup-straw"></i>Nacional</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4 filter-item" data-category="aventura">
+            <article class="card destination-card h-100">
+              <div class="media-frame"><img src="img/placeholder-card.svg" alt="Placeholder Desierto" /></div>
+              <div class="card-body p-4">
+                <h2 class="h4">Desierto extremo</h2>
+                <p class="text-muted">Una opcion visual para circuitos 4x4, astroturismo o experiencias fuera de ruta.</p>
+                <span class="destination-tag"><i class="bi bi-fire"></i>Aventura</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="container py-5">
+        <div class="section-heading mb-4">
+          <span class="eyebrow text-bg-light text-dark"><i class="bi bi-table"></i>Tarifas</span>
+          <h2 class="display-6 fw-bold mt-3">Tabla responsive de precios</h2>
+        </div>
+        <div class="table-responsive pricing-table">
+          <table class="table align-middle bg-white">
+            <thead class="table-dark">
+              <tr>
+                <th>Destino</th>
+                <th>Temporada</th>
+                <th>Duracion</th>
+                <th>Desde</th>
+                <th>Incluye</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Quebrada de Humahuaca</td>
+                <td>Todo el ano</td>
+                <td>3 noches</td>
+                <td>$280.000</td>
+                <td>Hotel + desayuno</td>
+              </tr>
+              <tr>
+                <td>Patagonia aventura</td>
+                <td>Invierno</td>
+                <td>5 noches</td>
+                <td>$540.000</td>
+                <td>Traslados + excursiones</td>
+              </tr>
+              <tr>
+                <td>Europa clasica</td>
+                <td>Primavera</td>
+                <td>10 noches</td>
+                <td>USD 2.150</td>
+                <td>Vuelo + hotel</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-white pt-5 pb-4">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="contact-panel p-4 h-100">
+              <h3 class="h5 text-dark mb-3"><i class="bi bi-send me-2"></i>Formulario rapido</h3>
+              <form class="footer-form">
+                <div class="mb-3"><input class="form-control" type="text" placeholder="Nombre y apellido" /></div>
+                <div class="mb-3"><input class="form-control" type="email" placeholder="Correo electronico" /></div>
+                <div class="mb-3">
+                  <select class="form-select">
+                    <option selected>Consulta por...</option>
+                    <option>Paquetes</option>
+                    <option>Promociones</option>
+                    <option>Asistencia</option>
+                  </select>
+                </div>
+                <button class="btn btn-brand rounded-pill w-100" type="button">Solicitar informacion</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="contact-panel p-4 h-100">
+              <h3 class="h5 text-dark mb-3"><i class="bi bi-share me-2"></i>Redes y sprite CSS</h3>
+              <p class="text-muted">Estos iconos usan una sola imagen sprite con distintas posiciones de fondo.</p>
+              <div class="sprite-list mb-4">
+                <span class="sprite-icon sprite-facebook" aria-label="Facebook" tabindex="0"></span>
+                <span class="sprite-icon sprite-x" aria-label="X" tabindex="0"></span>
+                <span class="sprite-icon sprite-instagram" aria-label="Instagram" tabindex="0"></span>
+                <span class="sprite-icon sprite-linkedin" aria-label="LinkedIn" tabindex="0"></span>
+              </div>
+              <div class="d-flex gap-2 flex-wrap">
+                <a class="btn btn-outline-dark rounded-pill" href="blog.html"><i class="bi bi-newspaper me-2"></i>Blog</a>
+                <a class="btn btn-outline-dark rounded-pill" href="phishing.html"><i class="bi bi-shield-check me-2"></i>Seguridad</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="contact-panel p-2 h-100 overflow-hidden">
+              <iframe class="placeholder-map w-100" title="Mapa embebido de ejemplo" src="https://www.google.com/maps?q=San%20Salvador%20de%20Jujuy&z=12&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 mt-4 pt-3 border-top border-secondary-subtle">
+          <p class="mb-0">BooTsTrap. Sitio responsive con iconos, sprite y seguridad basica.</p>
+          <div class="d-flex gap-3">
+            <a class="link-light text-decoration-none" href="destinos.html">Destinos</a>
+            <a class="link-light text-decoration-none" href="contacto.html">Contacto</a>
+            <a class="link-light text-decoration-none" href="precios.html">Precios</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

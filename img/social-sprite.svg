@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 64" role="img" aria-labelledby="title desc">
+  <title id="title">Sprite social</title>
+  <desc id="desc">Cuatro iconos horizontales para usar con background-position.</desc>
+  <rect width="64" height="64" rx="12" fill="#1877f2"/>
+  <path d="M36 18h-8c-6 0-10 4-10 11v7h-6v10h6v18h10V46h8l2-10h-10v-6c0-2 1-3 3-3h7z" fill="#fff"/>
+  <g transform="translate(64 0)">
+    <rect width="64" height="64" rx="12" fill="#111"/>
+    <path d="M39 17h8l-11 13 13 17h-10l-8-10-9 10h-8l12-13-13-17h10l8 10z" fill="#fff"/>
+  </g>
+  <g transform="translate(128 0)">
+    <rect width="64" height="64" rx="12" fill="#e1306c"/>
+    <rect x="17" y="17" width="30" height="30" rx="9" fill="none" stroke="#fff" stroke-width="4"/>
+    <circle cx="32" cy="32" r="8" fill="none" stroke="#fff" stroke-width="4"/>
+    <circle cx="41" cy="22" r="3" fill="#fff"/>
+  </g>
+  <g transform="translate(192 0)">
+    <rect width="64" height="64" rx="12" fill="#0a66c2"/>
+    <rect x="16" y="25" width="8" height="24" fill="#fff"/>
+    <circle cx="20" cy="18" r="4" fill="#fff"/>
+    <path d="M30 25h8v4c2-3 5-5 10-5 8 0 12 5 12 15v10h-8V40c0-5-2-8-6-8-4 0-8 3-8 8v9h-8z" fill="#fff"/>
+  </g>
+</svg>

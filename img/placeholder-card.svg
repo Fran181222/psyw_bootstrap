@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder para card</title>
+  <desc id="desc">Imagen genérica para tarjetas de destinos, agencias o blog.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e9f1f7"/>
+      <stop offset="100%" stop-color="#c9d6df"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect x="70" y="70" width="660" height="460" rx="24" fill="#ffffffaa" stroke="#3d5a80" stroke-width="4" stroke-dasharray="12 10"/>
+  <path d="M140 420 270 280l120 110 90-80 180 110v70H140Z" fill="#7fb3d5"/>
+  <circle cx="575" cy="200" r="48" fill="#f4a261"/>
+  <text x="400" y="520" fill="#234" font-family="Segoe UI, Arial, sans-serif" font-size="34" text-anchor="middle">REEMPLAZAR IMAGEN</text>
+</svg>

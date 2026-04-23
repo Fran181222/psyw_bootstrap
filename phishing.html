@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BooTsTrap | Modulo educativo de phishing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark glass-nav fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold brand-link" href="index.html">
+          <span class="brand-plane"><i class="bi bi-send-fill"></i></span>
+          <span class="brand-wordmark">BooTsTrap</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPhishing">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarPhishing">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explorar</a>
+              <div class="dropdown-menu mega-menu">
+                <div class="row g-3">
+                  <div class="col-lg-6">
+                    <h6 class="text-uppercase text-muted small">Secciones</h6>
+                    <a class="dropdown-item" href="destinos.html"><i class="bi bi-map me-2"></i>Destinos y precios</a>
+                    <a class="dropdown-item" href="agencias.html"><i class="bi bi-buildings me-2"></i>Agencias</a>
+                    <a class="dropdown-item" href="blog.html"><i class="bi bi-newspaper me-2"></i>Blog</a>
+                  </div>
+                  <div class="col-lg-6">
+                    <h6 class="text-uppercase text-muted small">Utilidades</h6>
+                    <a class="dropdown-item" href="contacto.html"><i class="bi bi-envelope-paper me-2"></i>Contacto</a>
+                    <a class="dropdown-item" href="precios.html"><i class="bi bi-cash-coin me-2"></i>Comparativa</a>
+                    <a class="dropdown-item" href="phishing.html"><i class="bi bi-shield-check me-2"></i>Modulo educativo</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            <li class="nav-item mt-3 mt-lg-0 ms-lg-2">
+              <a class="btn btn-brand rounded-pill px-4" href="destinos.html"><i class="bi bi-airplane-engines me-2"></i>Planificar viaje</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="page-header">
+      <div class="container">
+        <span class="eyebrow"><i class="bi bi-shield-check"></i>Modulo educativo</span>
+        <h1 class="display-5 fw-bold mt-3">Simulacion de phishing con enfoque educativo</h1>
+        <p class="col-lg-8 fs-5">No solicita datos reales. Solo entrena al usuario para detectar ofertas imposibles, urgencias falsas y mensajes diseñados para que hagas clic sin pensar.</p>
+      </div>
+    </header>
+
+    <main class="py-5">
+      <section class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="phishing-card p-4 h-100">
+              <h2 class="h3">Simulacion segura</h2>
+              <p class="text-muted">Primero se despliega una promo engañosa. El consejo educativo aparece solo cuando “caes” y haces clic.</p>
+              <button class="btn btn-brand rounded-pill" id="startPhishingSim" type="button">
+                <i class="bi bi-exclamation-triangle me-2"></i>Simulacion de phishing
+              </button>
+              <div class="alert alert-warning mt-4 mb-0">
+                <strong>Importante:</strong> esta demo no solicita datos reales ni envía información.
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div id="phishingOffer" class="fake-alert-shell h-100 shake-hover d-none">
+              <div class="fake-alert-topbar">
+                <span><i class="bi bi-gift-fill me-2"></i>OFERTA IMPERDIBLE SOLO POR HOY</span>
+                <span class="d-inline-flex align-items-center gap-2"><span class="blink-dot"></span>ULTIMOS CUPOS</span>
+              </div>
+              <div class="fake-alert-body">
+                <div class="urgent-pill breathe-soft mb-3">
+                  <i class="bi bi-alarm-fill"></i>Si no haces clic en <span id="phishingTimer" class="fw-bold">05:00</span> pierdes tu premio
+                </div>
+                <div class="fake-email-card p-3 mb-3">
+                  <p class="mb-2 text-danger fw-bold">Travel Bonus Center &lt;winner-alert@free-flight-bonus-now.biz&gt;</p>
+                  <p class="offer-kicker mb-2">FELICITACIONES</p>
+                  <h2 class="offer-headline mb-3">GANASTE UN <span>VIAJE GRATIS</span></h2>
+                  <p class="offer-copy mb-2">Tu correo fue seleccionado entre miles de usuarios para recibir pasajes, hotel y traslados incluidos para dos personas.</p>
+                  <p class="offer-copy mb-0 text-warning">Confirma AHORA o el premio se libera automáticamente para el siguiente ganador.</p>
+                </div>
+                <div class="d-grid gap-3">
+                  <button class="btn btn-warning btn-lg fw-bold rounded-pill text-dark breathe-soft" id="acceptPhishingBtn" type="button">
+                    QUIERO MI VIAJE GRATIS AHORA
+                  </button>
+                  <div class="small text-light-emphasis">
+                    Acceso inmediato. Respuesta obligatoria. Oferta exclusiva no repetible.
+                  </div>
+                </div>
+                <div id="phishingAdviceInline" class="alert alert-danger mt-4 mb-0 d-none">
+                  <strong>No vuelvas a caer.</strong> Los premios exagerados, los contadores urgentes y los dominios raros son señales muy comunes de estafa.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal fade" id="phishingModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content border-0 rounded-4">
+          <div class="modal-header">
+            <h2 class="modal-title h4">Consejo educativo</h2>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body p-4">
+            <div class="alert alert-warning">
+              <strong>Advertencia:</strong> acabas de hacer clic en una trampa diseñada para apurarte y emocionarte.
+            </div>
+            <h3 class="h5">No vuelvas a caer en este tipo de estafas</h3>
+            <p class="mb-3">Las promesas de viajes gratis, premios desproporcionados y temporizadores agresivos buscan que hagas clic antes de verificar si el mensaje es real.</p>
+            <h3 class="h5">Señales claras de fraude</h3>
+            <ul>
+              <li>Premios demasiado buenos para ser verdad.</li>
+              <li>Contadores regresivos y frases como “solo hoy” o “ultimo cupo”.</li>
+              <li>Remitentes y dominios promocionales poco confiables.</li>
+              <li>Botones enormes que te presionan a decidir ya mismo.</li>
+            </ul>
+            <p class="mb-0">Consejo: antes de hacer clic, verifica el remitente, entra por la web oficial y desconfía de cualquier regalo inesperado.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-white pt-5 pb-4">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="contact-panel p-4 h-100">
+              <h3 class="h5 text-dark mb-3"><i class="bi bi-send me-2"></i>Formulario rapido</h3>
+              <form class="footer-form">
+                <div class="mb-3"><input class="form-control" type="text" placeholder="Nombre y apellido" /></div>
+                <div class="mb-3"><input class="form-control" type="email" placeholder="Correo electronico" /></div>
+                <div class="mb-3"><select class="form-select"><option selected>Consulta por...</option><option>Paquetes</option><option>Promociones</option><option>Asistencia</option></select></div>
+                <button class="btn btn-brand rounded-pill w-100" type="button">Solicitar informacion</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="contact-panel p-4 h-100">
+              <h3 class="h5 text-dark mb-3"><i class="bi bi-share me-2"></i>Redes y sprite CSS</h3>
+              <p class="text-muted">Estos iconos usan una sola imagen sprite con distintas posiciones de fondo.</p>
+              <div class="sprite-list mb-4">
+                <span class="sprite-icon sprite-facebook" aria-label="Facebook" tabindex="0"></span>
+                <span class="sprite-icon sprite-x" aria-label="X" tabindex="0"></span>
+                <span class="sprite-icon sprite-instagram" aria-label="Instagram" tabindex="0"></span>
+                <span class="sprite-icon sprite-linkedin" aria-label="LinkedIn" tabindex="0"></span>
+              </div>
+              <div class="d-flex gap-2 flex-wrap">
+                <a class="btn btn-outline-dark rounded-pill" href="blog.html"><i class="bi bi-newspaper me-2"></i>Blog</a>
+                <a class="btn btn-outline-dark rounded-pill" href="phishing.html"><i class="bi bi-shield-check me-2"></i>Seguridad</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="contact-panel p-2 h-100 overflow-hidden">
+              <iframe class="placeholder-map w-100" title="Mapa embebido de ejemplo" src="https://www.google.com/maps?q=San%20Salvador%20de%20Jujuy&z=12&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 mt-4 pt-3 border-top border-secondary-subtle">
+          <p class="mb-0">BooTsTrap. Sitio responsive con iconos, sprite y seguridad basica.</p>
+          <div class="d-flex gap-3">
+            <a class="link-light text-decoration-none" href="destinos.html">Destinos</a>
+            <a class="link-light text-decoration-none" href="contacto.html">Contacto</a>
+            <a class="link-light text-decoration-none" href="precios.html">Precios</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
