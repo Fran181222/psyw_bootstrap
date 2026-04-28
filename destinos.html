@@ -27,33 +27,48 @@
           <span class="brand-plane"><i class="bi bi-send-fill"></i></span>
           <span class="brand-wordmark">BooTsTrap</span>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDestinos">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarDestinos"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarDestinos">
           <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explorar</a>
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Explorar
+              </a>
               <div class="dropdown-menu mega-menu">
                 <div class="row g-3">
                   <div class="col-lg-6">
                     <h6 class="text-uppercase text-muted small">Secciones</h6>
-                    <a class="dropdown-item" href="destinos.html"><i class="bi bi-map me-2"></i>Destinos y precios</a>
+                    <a class="dropdown-item" href="destinos.html"><i class="bi bi-map me-2"></i>Destinos</a>
                     <a class="dropdown-item" href="agencias.html"><i class="bi bi-buildings me-2"></i>Agencias</a>
                     <a class="dropdown-item" href="blog.html"><i class="bi bi-newspaper me-2"></i>Blog</a>
                   </div>
                   <div class="col-lg-6">
                     <h6 class="text-uppercase text-muted small">Utilidades</h6>
                     <a class="dropdown-item" href="contacto.html"><i class="bi bi-envelope-paper me-2"></i>Contacto</a>
-                    <a class="dropdown-item" href="precios.html"><i class="bi bi-cash-coin me-2"></i>Comparativa</a>
+                    <a class="dropdown-item" href="precios.html"><i class="bi bi-cash-coin me-2"></i>Precios</a>
                     <a class="dropdown-item" href="phishing.html"><i class="bi bi-shield-check me-2"></i>Modulo educativo</a>
                   </div>
                 </div>
               </div>
             </li>
             <li class="nav-item mt-3 mt-lg-0 ms-lg-2">
-              <a class="btn btn-brand rounded-pill px-4" href="destinos.html"><i class="bi bi-airplane-engines me-2"></i>Planificar viaje</a>
+              <a class="btn btn-brand rounded-pill px-4" href="destinos.html">
+                <i class="bi bi-airplane-engines me-2"></i>Planificar viaje
+              </a>
             </li>
           </ul>
         </div>
@@ -70,14 +85,6 @@
 
     <main class="py-5">
       <section class="container">
-        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-end gap-3 mb-4">
-          <div class="section-heading">
-            <span class="eyebrow text-bg-light text-dark"><i class="bi bi-pin-map"></i>Inspiracion</span>
-            <h2 class="display-6 fw-bold mt-3 mb-2">Explora destinos en un muro estilo Pinterest</h2>
-            <p class="text-muted mb-0">Distintas alturas, foco visual fuerte y acceso rapido a ideas para viajes nacionales, internacionales y de aventura.</p>
-          </div>
-        </div>
-
         <div class="d-flex flex-wrap gap-2 mb-4">
           <button class="btn btn-primary filter-chip active" data-filter="all">Todos</button>
           <button class="btn btn-outline-primary filter-chip" data-filter="nacional">Nacionales</button>
@@ -87,170 +94,241 @@
 
         <div class="destinations-masonry">
           <div class="masonry-item filter-item" data-category="nacional">
-            <article class="card destination-card destination-card--pinterest" style="--destination-aspect: 4 / 5">
-              <div class="media-frame"><img src="img/cataratas.jpg" alt="Cataratas del Iguazu" /></div>
-              <div class="card-body p-4">
-                <div class="destination-meta">
+            <article class="card destination-card destination-card--minimal" style="--destination-aspect: 4 / 5">
+              <div class="media-frame destination-visual">
+                <img src="img/cataratas.jpg" alt="Cataratas del Iguazu" />
+                <video class="destination-video" muted loop playsinline preload="metadata" aria-hidden="true">
+                  <source src="video/card.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="card-body destination-card-overlay p-4">
+                <div class="destination-meta destination-meta--floating">
                   <span class="destination-tag"><i class="bi bi-signpost-split"></i>Nacional</span>
                   <span class="destination-price"><i class="bi bi-wallet2"></i>Desde $280.000</span>
                 </div>
-                <h2 class="h4">Cataratas del Iguazu</h2>
-                <p class="text-muted mb-0">Turismo cultural, selva subtropical y una escapada visualmente impactante para quienes quieren naturaleza con buena infraestructura.</p>
-                <a class="btn btn-outline-primary rounded-pill" href="contacto.html">Quiero cotizar</a>
+                <div class="destination-title-wrap">
+                  <h2 class="destination-title">Cataratas del Iguazu</h2>
+                </div>
               </div>
             </article>
           </div>
+
           <div class="masonry-item filter-item" data-category="aventura">
-            <article class="card destination-card destination-card--pinterest" style="--destination-aspect: 4 / 3">
-              <div class="media-frame"><img src="img/patagonia.jpg" alt="Patagonia aventura" /></div>
-              <div class="card-body p-4">
-                <div class="destination-meta">
+            <article class="card destination-card destination-card--minimal" style="--destination-aspect: 4 / 3">
+              <div class="media-frame destination-visual">
+                <img src="img/patagonia.jpg" alt="Patagonia aventura" />
+                <video class="destination-video" muted loop playsinline preload="metadata" aria-hidden="true">
+                  <source src="video/card.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="card-body destination-card-overlay p-4">
+                <div class="destination-meta destination-meta--floating">
                   <span class="destination-tag"><i class="bi bi-tree"></i>Aventura</span>
                   <span class="destination-price"><i class="bi bi-wallet2"></i>Desde $540.000</span>
                 </div>
-                <h2 class="h4">Patagonia aventura</h2>
-                <p class="text-muted mb-0">Trekking, glaciares y salidas de alta energia para quienes buscan frio, paisajes enormes y experiencias outdoor.</p>
-                <a class="btn btn-outline-primary rounded-pill" href="contacto.html">Ver propuesta</a>
+                <div class="destination-title-wrap">
+                  <h2 class="destination-title">Patagonia aventura</h2>
+                </div>
               </div>
             </article>
           </div>
+
           <div class="masonry-item filter-item" data-category="internacional">
-            <article class="card destination-card destination-card--pinterest" style="--destination-aspect: 1 / 1">
-              <div class="media-frame"><img src="img/europe-clasica.jpg" alt="Europa clasica" /></div>
-              <div class="card-body p-4">
-                <div class="destination-meta">
+            <article class="card destination-card destination-card--minimal" style="--destination-aspect: 1 / 1">
+              <div class="media-frame destination-visual">
+                <img src="img/europe-clasica.jpg" alt="Europa clasica" />
+                <video class="destination-video" muted loop playsinline preload="metadata" aria-hidden="true">
+                  <source src="video/card.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="card-body destination-card-overlay p-4">
+                <div class="destination-meta destination-meta--floating">
                   <span class="destination-tag"><i class="bi bi-globe-europe-africa"></i>Internacional</span>
                   <span class="destination-price"><i class="bi bi-wallet2"></i>USD 2.150</span>
                 </div>
-                <h2 class="h4">Europa clasica</h2>
-                <p class="text-muted mb-0">Circuitos urbanos, museos y capitales iconicas pensadas para un viaje bien armado y muy compartible.</p>
-                <a class="btn btn-outline-primary rounded-pill" href="contacto.html">Armar itinerario</a>
+                <div class="destination-title-wrap">
+                  <h2 class="destination-title">Europa clasica</h2>
+                </div>
               </div>
             </article>
           </div>
+
           <div class="masonry-item filter-item" data-category="internacional">
-            <article class="card destination-card destination-card--pinterest" style="--destination-aspect: 3 / 4">
-              <div class="media-frame"><img src="img/city-love.jpg" alt="Ciudad del amor" /></div>
-              <div class="card-body p-4">
-                <div class="destination-meta">
+            <article class="card destination-card destination-card--minimal" style="--destination-aspect: 3 / 4">
+              <div class="media-frame destination-visual">
+                <img src="img/city-love.jpg" alt="Ciudad del amor" />
+                <video class="destination-video" muted loop playsinline preload="metadata" aria-hidden="true">
+                  <source src="video/card-paris.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="card-body destination-card-overlay p-4">
+                <div class="destination-meta destination-meta--floating">
                   <span class="destination-tag"><i class="bi bi-heart"></i>Escapada romantica</span>
                   <span class="destination-price"><i class="bi bi-wallet2"></i>USD 1.980</span>
                 </div>
-                <h2 class="h4">Ciudad del Amor</h2>
-                <p class="text-muted mb-0">Una opcion pensada para parejas que quieren cenas, paseos urbanos, fotos memorables y una experiencia mas intima.</p>
-                <a class="btn btn-outline-primary rounded-pill" href="contacto.html">Reservar idea</a>
+                <div class="destination-title-wrap">
+                  <h2 class="destination-title">Ciudad del Amor</h2>
+                </div>
               </div>
             </article>
           </div>
+
           <div class="masonry-item filter-item" data-category="internacional">
-            <article class="card destination-card destination-card--pinterest" style="--destination-aspect: 5 / 4">
-              <div class="media-frame"><img src="img/caribe.jpg" alt="Caribe premium" /></div>
-              <div class="card-body p-4">
-                <div class="destination-meta">
+            <article class="card destination-card destination-card--minimal" style="--destination-aspect: 5 / 4">
+              <div class="media-frame destination-visual">
+                <img src="img/caribe.jpg" alt="El Caribe" />
+                <video class="destination-video" muted loop playsinline preload="metadata" aria-hidden="true">
+                  <source src="video/card.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="card-body destination-card-overlay p-4">
+                <div class="destination-meta destination-meta--floating">
                   <span class="destination-tag"><i class="bi bi-brightness-high"></i>Internacional</span>
                   <span class="destination-price"><i class="bi bi-wallet2"></i>USD 2.420</span>
                 </div>
-                <h2 class="h4">El Caribe</h2>
-                <p class="text-muted mb-0">Playas, estadias premium y actividades acuaticas para quien busca un viaje suave, luminoso y muy disfrutable.</p>
-                <a class="btn btn-outline-primary rounded-pill" href="contacto.html">Consultar fechas</a>
+                <div class="destination-title-wrap">
+                  <h2 class="destination-title">El Caribe</h2>
+                </div>
               </div>
             </article>
           </div>
+
           <div class="masonry-item filter-item" data-category="aventura">
-            <article class="card destination-card destination-card--pinterest" style="--destination-aspect: 4 / 5">
-              <div class="media-frame"><img src="img/montaña.jpg" alt="Montana" /></div>
-              <div class="card-body p-4">
-                <div class="destination-meta">
+            <article class="card destination-card destination-card--minimal" style="--destination-aspect: 4 / 5">
+              <div class="media-frame destination-visual">
+                <img src="img/montaña.jpg" alt="Montana" />
+                <video class="destination-video" muted loop playsinline preload="metadata" aria-hidden="true">
+                  <source src="video/card-montaña.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="card-body destination-card-overlay p-4">
+                <div class="destination-meta destination-meta--floating">
                   <span class="destination-tag"><i class="bi bi-activity"></i>Aventura</span>
                   <span class="destination-price"><i class="bi bi-wallet2"></i>Desde $460.000</span>
                 </div>
-                <h2 class="h4">Montana</h2>
-                <p class="text-muted mb-0">Excursiones, senderismo y desniveles reales para viajeros que prefieren moverse y sumar aventura al itinerario.</p>
-                <a class="btn btn-outline-primary rounded-pill" href="contacto.html">Ver salida</a>
+                <div class="destination-title-wrap">
+                  <h2 class="destination-title">Montana</h2>
+                </div>
               </div>
             </article>
           </div>
+
           <div class="masonry-item filter-item" data-category="nacional">
-            <article class="card destination-card destination-card--pinterest" style="--destination-aspect: 5 / 4">
-              <div class="media-frame"><img src="img/sierra.jpg" alt="Sierras y descanso" /></div>
-              <div class="card-body p-4">
-                <div class="destination-meta">
+            <article class="card destination-card destination-card--minimal" style="--destination-aspect: 5 / 4">
+              <div class="media-frame destination-visual">
+                <img src="img/sierra.jpg" alt="Sierras y descanso" />
+                <video class="destination-video" muted loop playsinline preload="metadata" aria-hidden="true">
+                  <source src="video/card.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="card-body destination-card-overlay p-4">
+                <div class="destination-meta destination-meta--floating">
                   <span class="destination-tag"><i class="bi bi-house-heart"></i>Nacional</span>
                   <span class="destination-price"><i class="bi bi-wallet2"></i>Desde $230.000</span>
                 </div>
-                <h2 class="h4">Sierras y descanso</h2>
-                <p class="text-muted mb-0">Cabanas, aire limpio y turismo regional en una propuesta relajada para cortar la rutina sin irse tan lejos.</p>
-                <a class="btn btn-outline-primary rounded-pill" href="contacto.html">Pedir opciones</a>
+                <div class="destination-title-wrap">
+                  <h2 class="destination-title">Sierras y descanso</h2>
+                </div>
               </div>
             </article>
           </div>
+
           <div class="masonry-item filter-item" data-category="internacional">
-            <article class="card destination-card destination-card--pinterest" style="--destination-aspect: 4 / 3">
-              <div class="media-frame"><img src="img/asia.jpg" alt="Asia urbana" /></div>
-              <div class="card-body p-4">
-                <div class="destination-meta">
+            <article class="card destination-card destination-card--minimal" style="--destination-aspect: 4 / 3">
+              <div class="media-frame destination-visual">
+                <img src="img/asia.jpg" alt="Asia urbana" />
+                <video class="destination-video" muted loop playsinline preload="metadata" aria-hidden="true">
+                  <source src="video/card-asia.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="card-body destination-card-overlay p-4">
+                <div class="destination-meta destination-meta--floating">
                   <span class="destination-tag"><i class="bi bi-globe-central-south-asia"></i>Internacional</span>
                   <span class="destination-price"><i class="bi bi-wallet2"></i>USD 2.980</span>
                 </div>
-                <h2 class="h4">Asia urbana</h2>
-                <p class="text-muted mb-0">Circuitos modernos, neon, mercados y cultura gastronomica para quienes quieren ciudad intensa y muchisimo contraste visual.</p>
-                <a class="btn btn-outline-primary rounded-pill" href="contacto.html">Cotizar ruta</a>
+                <div class="destination-title-wrap">
+                  <h2 class="destination-title">Asia urbana</h2>
+                </div>
               </div>
             </article>
           </div>
+
           <div class="masonry-item filter-item" data-category="aventura">
-            <article class="card destination-card destination-card--pinterest" style="--destination-aspect: 3 / 4">
-              <div class="media-frame"><img src="img/selva.jpg" alt="Selva profunda" /></div>
-              <div class="card-body p-4">
-                <div class="destination-meta">
+            <article class="card destination-card destination-card--minimal" style="--destination-aspect: 3 / 4">
+              <div class="media-frame destination-visual">
+                <img src="img/selva.jpg" alt="Selva profunda" />
+                <video class="destination-video" muted loop playsinline preload="metadata" aria-hidden="true">
+                  <source src="video/card-selva.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="card-body destination-card-overlay p-4">
+                <div class="destination-meta destination-meta--floating">
                   <span class="destination-tag"><i class="bi bi-binoculars"></i>Aventura</span>
                   <span class="destination-price"><i class="bi bi-wallet2"></i>Desde $390.000</span>
                 </div>
-                <h2 class="h4">Selva profunda</h2>
-                <p class="text-muted mb-0">Ecoturismo, travesias y recorridos inmersivos para quien quiere una experiencia intensa y mas cruda.</p>
-                <a class="btn btn-outline-primary rounded-pill" href="contacto.html">Explorar plan</a>
+                <div class="destination-title-wrap">
+                  <h2 class="destination-title">Selva profunda</h2>
+                </div>
               </div>
             </article>
           </div>
+
           <div class="masonry-item filter-item" data-category="internacional">
-            <article class="card destination-card destination-card--pinterest" style="--destination-aspect: 1 / 1">
-              <div class="media-frame"><img src="img/mediterraneo.jpg" alt="Mediterraneo azul" /></div>
-              <div class="card-body p-4">
-                <div class="destination-meta">
+            <article class="card destination-card destination-card--minimal" style="--destination-aspect: 1 / 1">
+              <div class="media-frame destination-visual">
+                <img src="img/mediterraneo.jpg" alt="Mediterraneo azul" />
+                <video class="destination-video" muted loop playsinline preload="metadata" aria-hidden="true">
+                  <source src="video/card-mediterraneo.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="card-body destination-card-overlay p-4">
+                <div class="destination-meta destination-meta--floating">
                   <span class="destination-tag"><i class="bi bi-water"></i>Internacional</span>
                   <span class="destination-price"><i class="bi bi-wallet2"></i>USD 2.640</span>
                 </div>
-                <h2 class="h4">Mediterraneo azul</h2>
-                <p class="text-muted mb-0">Cruceros, islas, playas y rutas historicas junto al mar en una propuesta muy aspiracional y elegante.</p>
-                <a class="btn btn-outline-primary rounded-pill" href="contacto.html">Quiero saber mas</a>
+                <div class="destination-title-wrap">
+                  <h2 class="destination-title">Mediterraneo azul</h2>
+                </div>
               </div>
             </article>
           </div>
+
           <div class="masonry-item filter-item" data-category="nacional">
-            <article class="card destination-card destination-card--pinterest" style="--destination-aspect: 4 / 5">
-              <div class="media-frame"><img src="img/viñedo.jpg" alt="Ruta del vino" /></div>
-              <div class="card-body p-4">
-                <div class="destination-meta">
+            <article class="card destination-card destination-card--minimal" style="--destination-aspect: 4 / 5">
+              <div class="media-frame destination-visual">
+                <img src="img/viñedo.jpg" alt="Ruta del vino" />
+                <video class="destination-video" muted loop playsinline preload="metadata" aria-hidden="true">
+                  <source src="video/card.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="card-body destination-card-overlay p-4">
+                <div class="destination-meta destination-meta--floating">
                   <span class="destination-tag"><i class="bi bi-cup-straw"></i>Nacional</span>
                   <span class="destination-price"><i class="bi bi-wallet2"></i>Desde $310.000</span>
                 </div>
-                <h2 class="h4">Ruta del vino</h2>
-                <p class="text-muted mb-0">Bodegas, relax y turismo gastronomico para escapadas con mas calma, paisaje y disfrute culinario.</p>
-                <a class="btn btn-outline-primary rounded-pill" href="contacto.html">Consultar bodega</a>
+                <div class="destination-title-wrap">
+                  <h2 class="destination-title">Ruta del vino</h2>
+                </div>
               </div>
             </article>
           </div>
+
           <div class="masonry-item filter-item" data-category="aventura">
-            <article class="card destination-card destination-card--pinterest" style="--destination-aspect: 5 / 4">
-              <div class="media-frame"><img src="img/desierto.jpg" alt="Desierto extremo" /></div>
-              <div class="card-body p-4">
-                <div class="destination-meta">
+            <article class="card destination-card destination-card--minimal" style="--destination-aspect: 5 / 4">
+              <div class="media-frame destination-visual">
+                <img src="img/desierto.jpg" alt="Desierto extremo" />
+                <video class="destination-video" muted loop playsinline preload="metadata" aria-hidden="true">
+                  <source src="video/card-desierto.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="card-body destination-card-overlay p-4">
+                <div class="destination-meta destination-meta--floating">
                   <span class="destination-tag"><i class="bi bi-fire"></i>Aventura</span>
                   <span class="destination-price"><i class="bi bi-wallet2"></i>Desde $350.000</span>
                 </div>
-                <h2 class="h4">Desierto extremo</h2>
-                <p class="text-muted mb-0">Una opcion pensada para paisajes aridos, cielos amplios y recorridos con una personalidad visual muy marcada.</p>
-                <a class="btn btn-outline-primary rounded-pill" href="contacto.html">Armar salida</a>
+                <div class="destination-title-wrap">
+                  <h2 class="destination-title">Desierto extremo</h2>
+                </div>
               </div>
             </article>
           </div>
@@ -306,7 +384,7 @@
         <div class="row g-4">
           <div class="col-lg-4">
             <div class="contact-panel p-4 h-100">
-              <h3 class="h5 text-dark mb-3"><i class="bi bi-send me-2"></i>Formulario rapido</h3>
+              <h3 class="h5 text-dark mb-3"><i class="bi bi-send me-2"></i>Consultanos</h3>
               <form class="footer-form">
                 <div class="mb-3"><input class="form-control" type="text" placeholder="Nombre y apellido" /></div>
                 <div class="mb-3"><input class="form-control" type="email" placeholder="Correo electronico" /></div>
@@ -325,7 +403,7 @@
           <div class="col-lg-4">
             <div class="contact-panel p-4 h-100">
               <h3 class="h5 text-dark mb-3"><i class="bi bi-share me-2"></i>Redes</h3>
-              <p class="text-muted">Visitanos en nuestras redes sociales</p>
+              <p class="text-muted footer-social-copy">Visitanos en nuestras redes sociales</p>
               <div class="sprite-list mb-4">
                 <span class="sprite-icon sprite-facebook" aria-label="Facebook" tabindex="0"></span>
                 <span class="sprite-icon sprite-x" aria-label="X" tabindex="0"></span>
@@ -340,7 +418,13 @@
           </div>
           <div class="col-lg-4">
             <div class="contact-panel p-2 h-100 overflow-hidden">
-              <iframe class="placeholder-map w-100" title="Mapa embebido de ejemplo" src="https://www.google.com/maps?q=San%20Salvador%20de%20Jujuy&z=12&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe
+                class="placeholder-map w-100"
+                title="Mapa embebido de ejemplo"
+                src="https://www.google.com/maps?q=San%20Salvador%20de%20Jujuy&z=12&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>

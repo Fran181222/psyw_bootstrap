@@ -135,13 +135,34 @@ function initDestinationFilters() {
 
 function initCardZoom() {
   $(".destination-card, .blog-card").on("mouseenter", function () {
-    $(this).addClass("is-hovered");
-    $(this).find(".media-frame").addClass("zoom-active");
+    const card = $(this);
+    const frame = card.find(".media-frame");
+    const video = card.find(".destination-video").get(0);
+
+    card.addClass("is-hovered");
+    frame.addClass("zoom-active");
+
+    if (video) {
+      const playPromise = video.play();
+
+      if (playPromise && typeof playPromise.catch === "function") {
+        playPromise.catch(function () {});
+      }
+    }
   });
 
   $(".destination-card, .blog-card").on("mouseleave", function () {
-    $(this).removeClass("is-hovered");
-    $(this).find(".media-frame").removeClass("zoom-active");
+    const card = $(this);
+    const frame = card.find(".media-frame");
+    const video = card.find(".destination-video").get(0);
+
+    card.removeClass("is-hovered");
+    frame.removeClass("zoom-active");
+
+    if (video) {
+      video.pause();
+      video.currentTime = 0;
+    }
   });
 }
 

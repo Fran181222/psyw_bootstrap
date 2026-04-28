@@ -10,8 +10,14 @@
       href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -21,33 +27,62 @@
           <span class="brand-plane"><i class="bi bi-send-fill"></i></span>
           <span class="brand-wordmark">BooTsTrap</span>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBlog">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarBlog"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarBlog">
           <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explorar</a>
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Explorar</a
+              >
               <div class="dropdown-menu mega-menu">
                 <div class="row g-3">
                   <div class="col-lg-6">
                     <h6 class="text-uppercase text-muted small">Secciones</h6>
-                    <a class="dropdown-item" href="destinos.html"><i class="bi bi-map me-2"></i>Destinos y precios</a>
-                    <a class="dropdown-item" href="agencias.html"><i class="bi bi-buildings me-2"></i>Agencias</a>
-                    <a class="dropdown-item" href="blog.html"><i class="bi bi-newspaper me-2"></i>Blog</a>
+                    <a class="dropdown-item" href="destinos.html"
+                      ><i class="bi bi-map me-2"></i>Destinos</a
+                    >
+                    <a class="dropdown-item" href="agencias.html"
+                      ><i class="bi bi-buildings me-2"></i>Agencias</a
+                    >
+                    <a class="dropdown-item" href="blog.html"
+                      ><i class="bi bi-newspaper me-2"></i>Blog</a
+                    >
                   </div>
                   <div class="col-lg-6">
                     <h6 class="text-uppercase text-muted small">Utilidades</h6>
-                    <a class="dropdown-item" href="contacto.html"><i class="bi bi-envelope-paper me-2"></i>Contacto</a>
-                    <a class="dropdown-item" href="precios.html"><i class="bi bi-cash-coin me-2"></i>Comparativa</a>
-                    <a class="dropdown-item" href="phishing.html"><i class="bi bi-shield-check me-2"></i>Modulo educativo</a>
+                    <a class="dropdown-item" href="contacto.html"
+                      ><i class="bi bi-envelope-paper me-2"></i>Contacto</a
+                    >
+                    <a class="dropdown-item" href="precios.html"
+                      ><i class="bi bi-cash-coin me-2"></i>Precios</a
+                    >
+                    <a class="dropdown-item" href="phishing.html"
+                      ><i class="bi bi-shield-check me-2"></i>Modulo
+                      educativo</a
+                    >
                   </div>
                 </div>
               </div>
             </li>
             <li class="nav-item mt-3 mt-lg-0 ms-lg-2">
-              <a class="btn btn-brand rounded-pill px-4" href="destinos.html"><i class="bi bi-airplane-engines me-2"></i>Planificar viaje</a>
+              <a class="btn btn-brand rounded-pill px-4" href="destinos.html"
+                ><i class="bi bi-airplane-engines me-2"></i>Planificar viaje</a
+              >
             </li>
           </ul>
         </div>
@@ -56,198 +91,458 @@
 
     <main class="py-5">
       <section class="container mb-4">
-        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-end gap-3">
-          <div class="section-heading">
-            <span class="eyebrow text-bg-light text-dark"><i class="bi bi-newspaper"></i>Blog editorial</span>
-            <h1 class="display-6 fw-bold mt-3 mb-2">Un blog con formato revista y reacciones en cada nota</h1>
-            <p class="text-muted mb-0">Recorre las notas, filtralas por categoria y reacciona con likes directamente sobre cada card.</p>
+        <div
+          class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-end gap-3"
+        >
+          <div class="section-heading section-heading-spaced">
+            <span class="eyebrow text-bg-light text-dark"
+              ><i class="bi bi-newspaper"></i>Blog</span
+            >
+            <h1 class="display-6 fw-bold mt-3 mb-2">
+              Te compartimos un espacio para inspirarte
+            </h1>
+            <p class="text-muted mb-0">
+              Aquí obtendras contenido de valor, novedades del mundo
+              del turismo y consejos para que cada viaje sea mejor que el
+              anterior.
+            </p>
           </div>
-          <div class="d-flex flex-wrap gap-2">
-            <button class="btn btn-dark blog-filter active" data-filter="all">Todos</button>
-            <button class="btn btn-outline-dark blog-filter" data-filter="tips">Tips</button>
-            <button class="btn btn-outline-dark blog-filter" data-filter="guias">Guias</button>
-            <button class="btn btn-outline-dark blog-filter" data-filter="novedades">Novedades</button>
-          </div>
+        </div>
+        <div class="d-flex flex-wrap gap-2">
+          <button class="btn btn-dark blog-filter active" data-filter="all">
+            Todos
+          </button>
+          <button class="btn btn-outline-dark blog-filter" data-filter="tips">
+            Tips
+          </button>
+          <button
+            class="btn btn-outline-dark blog-filter"
+            data-filter="guias"
+          >
+            Guias
+          </button>
+          <button
+            class="btn btn-outline-dark blog-filter"
+            data-filter="novedades"
+          >
+            Novedades
+          </button>
         </div>
       </section>
 
       <section class="container">
         <div class="magazine-grid">
-          <article class="card blog-card blog-item blog-feature-hero scroll-reveal" data-category="guias">
-            <button class="blog-like-btn" type="button" aria-label="Dar me gusta" aria-pressed="false">
+          <article
+            class="card blog-card blog-item blog-feature-hero scroll-reveal"
+            data-category="guias"
+          >
+            <button
+              class="blog-like-btn"
+              type="button"
+              aria-label="Dar me gusta"
+              aria-pressed="false"
+            >
               <i class="bi bi-heart"></i>
             </button>
-            <span class="blog-heart-burst" aria-hidden="true"><i class="bi bi-heart-fill"></i></span>
-            <div class="media-frame"><img src="img/city-love.jpg" alt="Escapada urbana de fin de semana" /></div>
+            <span class="blog-heart-burst" aria-hidden="true"
+              ><i class="bi bi-heart-fill"></i
+            ></span>
+            <div class="media-frame">
+              <img
+                src="img/city-love.jpg"
+                alt="Escapada urbana de fin de semana"
+              />
+            </div>
             <div class="card-body p-4">
-              <span class="destination-tag mb-3"><i class="bi bi-journal-richtext"></i>Guias</span>
+              <span class="destination-tag mb-3"
+                ><i class="bi bi-journal-richtext"></i>Guias</span
+              >
               <div class="blog-card-meta mb-3">
                 <span><i class="bi bi-clock me-1"></i>6 min</span>
-                <span><i class="bi bi-bookmark-star me-1"></i>Portada editorial</span>
+                <span
+                  ><i class="bi bi-bookmark-star me-1"></i>Portada
+                  editorial</span
+                >
               </div>
-              <h2 class="h3">Como preparar una escapada de fin de semana sin que se te vaya el presupuesto</h2>
-              <p class="text-muted">Una nota principal con mirada de revista para resolver destino, tiempos y gastos sin perder el costado inspiracional del viaje.</p>
+              <h2 class="h3">
+                Como preparar una escapada de fin de semana sin que se te vaya
+                el presupuesto
+              </h2>
+              <p class="text-muted">
+                Una nota principal con mirada de revista para resolver destino,
+                tiempos y gastos sin perder el costado inspiracional del viaje.
+              </p>
               <div class="comment-box p-3 rounded-4 mt-4">
                 <strong>Comentario destacado:</strong>
-                <p class="mb-0">Una portada ideal para mostrar una nota larga con peso visual y un tono mas editorial.</p>
+                <p class="mb-0">
+                  Una portada ideal para mostrar una nota larga con peso visual
+                  y un tono mas editorial.
+                </p>
               </div>
             </div>
           </article>
 
           <div class="magazine-stack">
-            <article class="card blog-card blog-item blog-tall scroll-reveal" data-category="tips">
-              <button class="blog-like-btn" type="button" aria-label="Dar me gusta" aria-pressed="false">
+            <article
+              class="card blog-card blog-item blog-tall scroll-reveal"
+              data-category="tips"
+            >
+              <button
+                class="blog-like-btn"
+                type="button"
+                aria-label="Dar me gusta"
+                aria-pressed="false"
+              >
                 <i class="bi bi-heart"></i>
               </button>
-              <span class="blog-heart-burst" aria-hidden="true"><i class="bi bi-heart-fill"></i></span>
-              <div class="media-frame"><img src="img/europe-clasica.jpg" alt="Checklist para viajar" /></div>
+              <span class="blog-heart-burst" aria-hidden="true"
+                ><i class="bi bi-heart-fill"></i
+              ></span>
+              <div class="media-frame">
+                <img src="img/europe-clasica.jpg" alt="Checklist para viajar" />
+              </div>
               <div class="card-body p-4">
-                <span class="destination-tag mb-3"><i class="bi bi-lightbulb"></i>Tips</span>
+                <span class="destination-tag mb-3"
+                  ><i class="bi bi-lightbulb"></i>Tips</span
+                >
                 <h2 class="h4">Checklist previa al viaje</h2>
-                <p class="text-muted mb-0">Documentacion, equipaje, pagos y reservas en una nota corta, util y rapida de leer.</p>
+                <p class="text-muted mb-0">
+                  Documentacion, equipaje, pagos y reservas en una nota corta,
+                  util y rapida de leer.
+                </p>
               </div>
             </article>
 
-            <article class="card blog-card blog-item scroll-reveal" data-category="novedades">
-              <button class="blog-like-btn" type="button" aria-label="Dar me gusta" aria-pressed="false">
+            <article
+              class="card blog-card blog-item scroll-reveal"
+              data-category="novedades"
+            >
+              <button
+                class="blog-like-btn"
+                type="button"
+                aria-label="Dar me gusta"
+                aria-pressed="false"
+              >
                 <i class="bi bi-heart"></i>
               </button>
-              <span class="blog-heart-burst" aria-hidden="true"><i class="bi bi-heart-fill"></i></span>
-              <div class="media-frame"><img src="img/mediterraneo.jpg" alt="Tendencias de temporada" /></div>
+              <span class="blog-heart-burst" aria-hidden="true"
+                ><i class="bi bi-heart-fill"></i
+              ></span>
+              <div class="media-frame">
+                <img src="img/mediterraneo.jpg" alt="Tendencias de temporada" />
+              </div>
               <div class="card-body p-4">
-                <span class="destination-tag mb-3"><i class="bi bi-megaphone"></i>Novedades</span>
+                <span class="destination-tag mb-3"
+                  ><i class="bi bi-megaphone"></i>Novedades</span
+                >
                 <h2 class="h4">Tendencias y promociones de temporada</h2>
-                <p class="text-muted mb-0">Destinos con mas movimiento, rutas aspiracionales y propuestas que hoy generan mucho interes.</p>
+                <p class="text-muted mb-0">
+                  Destinos con mas movimiento, rutas aspiracionales y propuestas
+                  que hoy generan mucho interes.
+                </p>
               </div>
             </article>
           </div>
         </div>
 
         <div class="blog-editorial-grid">
-          <article class="card blog-card blog-item scroll-reveal" data-category="guias">
-            <button class="blog-like-btn" type="button" aria-label="Dar me gusta" aria-pressed="false">
+          <article
+            class="card blog-card blog-item scroll-reveal"
+            data-category="guias"
+          >
+            <button
+              class="blog-like-btn"
+              type="button"
+              aria-label="Dar me gusta"
+              aria-pressed="false"
+            >
               <i class="bi bi-heart"></i>
             </button>
-            <span class="blog-heart-burst" aria-hidden="true"><i class="bi bi-heart-fill"></i></span>
-            <div class="media-frame"><img src="img/paris.jpg" alt="Ciudades para caminar y descubrir" /></div>
+            <span class="blog-heart-burst" aria-hidden="true"
+              ><i class="bi bi-heart-fill"></i
+            ></span>
+            <div class="media-frame">
+              <img
+                src="img/paris.jpg"
+                alt="Ciudades para caminar y descubrir"
+              />
+            </div>
             <div class="card-body p-4">
-              <span class="blog-kicker mb-2"><i class="bi bi-compass"></i>Ruta urbana</span>
-              <h2 class="h4">Ciudades para caminar, mirar y dejarte sorprender</h2>
-              <p class="text-muted mb-0">Una nota pensada para destacar destinos ideales para recorrer sin apuro y con mucho contenido visual.</p>
+              <span class="blog-kicker mb-2"
+                ><i class="bi bi-compass"></i>Ruta urbana</span
+              >
+              <h2 class="h4">
+                Ciudades para caminar, mirar y dejarte sorprender
+              </h2>
+              <p class="text-muted mb-0">
+                Una nota pensada para destacar destinos ideales para recorrer
+                sin apuro y con mucho contenido visual.
+              </p>
             </div>
           </article>
 
-          <article class="card blog-card blog-item scroll-reveal" data-category="tips">
-            <button class="blog-like-btn" type="button" aria-label="Dar me gusta" aria-pressed="false">
+          <article
+            class="card blog-card blog-item scroll-reveal"
+            data-category="tips"
+          >
+            <button
+              class="blog-like-btn"
+              type="button"
+              aria-label="Dar me gusta"
+              aria-pressed="false"
+            >
               <i class="bi bi-heart"></i>
             </button>
-            <span class="blog-heart-burst" aria-hidden="true"><i class="bi bi-heart-fill"></i></span>
-            <div class="media-frame"><img src="img/patagonia.jpg" alt="Consejos para viajes de aventura" /></div>
+            <span class="blog-heart-burst" aria-hidden="true"
+              ><i class="bi bi-heart-fill"></i
+            ></span>
+            <div class="media-frame">
+              <img
+                src="img/patagonia.jpg"
+                alt="Consejos para viajes de aventura"
+              />
+            </div>
             <div class="card-body p-4">
-              <span class="blog-kicker mb-2"><i class="bi bi-backpack2"></i>Aventura</span>
+              <span class="blog-kicker mb-2"
+                ><i class="bi bi-backpack2"></i>Aventura</span
+              >
               <h2 class="h4">Que llevar a un viaje con clima variable</h2>
-              <p class="text-muted mb-0">Capas, abrigo, calzado y objetos chicos que mejoran mucho la experiencia cuando el viaje es mas activo.</p>
+              <p class="text-muted mb-0">
+                Capas, abrigo, calzado y objetos chicos que mejoran mucho la
+                experiencia cuando el viaje es mas activo.
+              </p>
             </div>
           </article>
 
-          <article class="card blog-card blog-item scroll-reveal" data-category="novedades">
-            <button class="blog-like-btn" type="button" aria-label="Dar me gusta" aria-pressed="false">
+          <article
+            class="card blog-card blog-item scroll-reveal"
+            data-category="novedades"
+          >
+            <button
+              class="blog-like-btn"
+              type="button"
+              aria-label="Dar me gusta"
+              aria-pressed="false"
+            >
               <i class="bi bi-heart"></i>
             </button>
-            <span class="blog-heart-burst" aria-hidden="true"><i class="bi bi-heart-fill"></i></span>
-            <div class="media-frame"><img src="img/barcelona.jpg" alt="Nueva seleccion de escapadas" /></div>
+            <span class="blog-heart-burst" aria-hidden="true"
+              ><i class="bi bi-heart-fill"></i
+            ></span>
+            <div class="media-frame">
+              <img src="img/barcelona.jpg" alt="Nueva seleccion de escapadas" />
+            </div>
             <div class="card-body p-4">
-              <span class="blog-kicker mb-2"><i class="bi bi-stars"></i>Actualizacion</span>
-              <h2 class="h4">Escapadas urbanas que estan marcando la temporada</h2>
-              <p class="text-muted mb-0">Destinos con buen movimiento cultural, gastronomia fuerte y mucho potencial para inspirar nuevas salidas.</p>
+              <span class="blog-kicker mb-2"
+                ><i class="bi bi-stars"></i>Actualizacion</span
+              >
+              <h2 class="h4">
+                Escapadas urbanas que estan marcando la temporada
+              </h2>
+              <p class="text-muted mb-0">
+                Destinos con buen movimiento cultural, gastronomia fuerte y
+                mucho potencial para inspirar nuevas salidas.
+              </p>
             </div>
           </article>
 
-          <article class="card blog-card blog-item scroll-reveal" data-category="guias">
-            <button class="blog-like-btn" type="button" aria-label="Dar me gusta" aria-pressed="false">
+          <article
+            class="card blog-card blog-item scroll-reveal"
+            data-category="guias"
+          >
+            <button
+              class="blog-like-btn"
+              type="button"
+              aria-label="Dar me gusta"
+              aria-pressed="false"
+            >
               <i class="bi bi-heart"></i>
             </button>
-            <span class="blog-heart-burst" aria-hidden="true"><i class="bi bi-heart-fill"></i></span>
-            <div class="media-frame"><img src="img/japon.jpg" alt="Viajes largos con itinerario claro" /></div>
+            <span class="blog-heart-burst" aria-hidden="true"
+              ><i class="bi bi-heart-fill"></i
+            ></span>
+            <div class="media-frame">
+              <img
+                src="img/japon.jpg"
+                alt="Viajes largos con itinerario claro"
+              />
+            </div>
             <div class="card-body p-4">
-              <span class="blog-kicker mb-2"><i class="bi bi-globe-asia-australia"></i>Larga distancia</span>
-              <h2 class="h4">Como ordenar un itinerario cuando el viaje es mas largo</h2>
-              <p class="text-muted mb-0">Una guia para distribuir dias, traslados y descansos sin que el recorrido se vuelva agotador.</p>
+              <span class="blog-kicker mb-2"
+                ><i class="bi bi-globe-asia-australia"></i>Larga distancia</span
+              >
+              <h2 class="h4">
+                Como ordenar un itinerario cuando el viaje es mas largo
+              </h2>
+              <p class="text-muted mb-0">
+                Una guia para distribuir dias, traslados y descansos sin que el
+                recorrido se vuelva agotador.
+              </p>
             </div>
           </article>
 
-          <article class="card blog-card blog-item scroll-reveal" data-category="tips">
-            <button class="blog-like-btn" type="button" aria-label="Dar me gusta" aria-pressed="false">
+          <article
+            class="card blog-card blog-item scroll-reveal"
+            data-category="tips"
+          >
+            <button
+              class="blog-like-btn"
+              type="button"
+              aria-label="Dar me gusta"
+              aria-pressed="false"
+            >
               <i class="bi bi-heart"></i>
             </button>
-            <span class="blog-heart-burst" aria-hidden="true"><i class="bi bi-heart-fill"></i></span>
-            <div class="media-frame"><img src="img/caribe.jpg" alt="Consejos para un viaje relajado" /></div>
+            <span class="blog-heart-burst" aria-hidden="true"
+              ><i class="bi bi-heart-fill"></i
+            ></span>
+            <div class="media-frame">
+              <img src="img/caribe.jpg" alt="Consejos para un viaje relajado" />
+            </div>
             <div class="card-body p-4">
-              <span class="blog-kicker mb-2"><i class="bi bi-brightness-high"></i>Relax</span>
-              <h2 class="h4">Pequenos detalles que mejoran un viaje de descanso</h2>
-              <p class="text-muted mb-0">Reservas, horarios, ubicacion y comodidades que hacen que el plan se sienta realmente liviano.</p>
+              <span class="blog-kicker mb-2"
+                ><i class="bi bi-brightness-high"></i>Relax</span
+              >
+              <h2 class="h4">
+                Pequenos detalles que mejoran un viaje de descanso
+              </h2>
+              <p class="text-muted mb-0">
+                Reservas, horarios, ubicacion y comodidades que hacen que el
+                plan se sienta realmente liviano.
+              </p>
             </div>
           </article>
 
-          <article class="card blog-card blog-item scroll-reveal" data-category="novedades">
-            <button class="blog-like-btn" type="button" aria-label="Dar me gusta" aria-pressed="false">
+          <article
+            class="card blog-card blog-item scroll-reveal"
+            data-category="novedades"
+          >
+            <button
+              class="blog-like-btn"
+              type="button"
+              aria-label="Dar me gusta"
+              aria-pressed="false"
+            >
               <i class="bi bi-heart"></i>
             </button>
-            <span class="blog-heart-burst" aria-hidden="true"><i class="bi bi-heart-fill"></i></span>
-            <div class="media-frame"><img src="img/viñedo.jpg" alt="Turismo gastronomico y escapadas" /></div>
+            <span class="blog-heart-burst" aria-hidden="true"
+              ><i class="bi bi-heart-fill"></i
+            ></span>
+            <div class="media-frame">
+              <img
+                src="img/viñedo.jpg"
+                alt="Turismo gastronomico y escapadas"
+              />
+            </div>
             <div class="card-body p-4">
-              <span class="blog-kicker mb-2"><i class="bi bi-cup-hot"></i>Gourmet</span>
-              <h2 class="h4">Rutas gastronomicas y escapadas que vienen creciendo</h2>
-              <p class="text-muted mb-0">Una nota breve para sumar variedad al blog con un perfil mas sensorial y relajado.</p>
+              <span class="blog-kicker mb-2"
+                ><i class="bi bi-cup-hot"></i>Gourmet</span
+              >
+              <h2 class="h4">
+                Rutas gastronomicas y escapadas que vienen creciendo
+              </h2>
+              <p class="text-muted mb-0">
+                Una nota breve para sumar variedad al blog con un perfil mas
+                sensorial y relajado.
+              </p>
             </div>
           </article>
         </div>
       </section>
     </main>
-
     <footer class="text-white pt-5 pb-4">
       <div class="container">
         <div class="row g-4">
           <div class="col-lg-4">
             <div class="contact-panel p-4 h-100">
-              <h3 class="h5 text-dark mb-3"><i class="bi bi-send me-2"></i>Formulario rapido</h3>
+              <h3 class="h5 text-dark mb-3">
+                <i class="bi bi-send me-2"></i>Consultanos
+              </h3>
               <form class="footer-form">
-                <div class="mb-3"><input class="form-control" type="text" placeholder="Nombre y apellido" /></div>
-                <div class="mb-3"><input class="form-control" type="email" placeholder="Correo electronico" /></div>
-                <div class="mb-3"><select class="form-select"><option selected>Consulta por...</option><option>Paquetes</option><option>Promociones</option><option>Asistencia</option></select></div>
-                <button class="btn btn-brand rounded-pill w-100" type="button">Solicitar informacion</button>
+                <div class="mb-3">
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Nombre y apellido"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    class="form-control"
+                    type="email"
+                    placeholder="Correo electronico"
+                  />
+                </div>
+                <div class="mb-3">
+                  <select class="form-select">
+                    <option selected>Consulta por...</option>
+                    <option>Paquetes</option>
+                    <option>Promociones</option>
+                    <option>Asistencia</option>
+                  </select>
+                </div>
+                <button class="btn btn-brand rounded-pill w-100" type="button">
+                  Solicitar informacion
+                </button>
               </form>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="contact-panel p-4 h-100">
-              <h3 class="h5 text-dark mb-3"><i class="bi bi-share me-2"></i>Redes y sprite CSS</h3>
-              <p class="text-muted">Estos iconos usan una sola imagen sprite con distintas posiciones de fondo.</p>
+              <h3 class="h5 text-dark mb-3">
+                <i class="bi bi-share me-2"></i>Redes
+              </h3>
+              <p class="text-muted footer-social-copy">Visitanos en nuestras redes sociales</p>
               <div class="sprite-list mb-4">
-                <span class="sprite-icon sprite-facebook" aria-label="Facebook" tabindex="0"></span>
-                <span class="sprite-icon sprite-x" aria-label="X" tabindex="0"></span>
-                <span class="sprite-icon sprite-instagram" aria-label="Instagram" tabindex="0"></span>
-                <span class="sprite-icon sprite-linkedin" aria-label="LinkedIn" tabindex="0"></span>
+                <span
+                  class="sprite-icon sprite-facebook"
+                  aria-label="Facebook"
+                  tabindex="0"
+                ></span>
+                <span
+                  class="sprite-icon sprite-x"
+                  aria-label="X"
+                  tabindex="0"
+                ></span>
+                <span
+                  class="sprite-icon sprite-instagram"
+                  aria-label="Instagram"
+                  tabindex="0"
+                ></span>
+                <span
+                  class="sprite-icon sprite-linkedin"
+                  aria-label="LinkedIn"
+                  tabindex="0"
+                ></span>
               </div>
               <div class="d-flex gap-2 flex-wrap">
-                <a class="btn btn-outline-dark rounded-pill" href="blog.html"><i class="bi bi-newspaper me-2"></i>Blog</a>
-                <a class="btn btn-outline-dark rounded-pill" href="phishing.html"><i class="bi bi-shield-check me-2"></i>Seguridad</a>
+                <a class="btn btn-outline-dark rounded-pill" href="blog.html"
+                  ><i class="bi bi-newspaper me-2"></i>Blog</a
+                >
+                <a
+                  class="btn btn-outline-dark rounded-pill"
+                  href="phishing.html"
+                  ><i class="bi bi-shield-check me-2"></i>Seguridad</a
+                >
               </div>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="contact-panel p-2 h-100 overflow-hidden">
-              <iframe class="placeholder-map w-100" title="Mapa embebido de ejemplo" src="https://www.google.com/maps?q=San%20Salvador%20de%20Jujuy&z=12&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe
+                class="placeholder-map w-100"
+                title="Mapa embebido de ejemplo"
+                src="https://www.google.com/maps?q=San%20Salvador%20de%20Jujuy&z=12&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>
-        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 mt-4 pt-3 border-top border-secondary-subtle">
-          <p class="mb-0">BooTsTrap. Sitio responsive con iconos, sprite y seguridad basica.</p>
-          <div class="d-flex gap-3">
-            <a class="link-light text-decoration-none" href="destinos.html">Destinos</a>
-            <a class="link-light text-decoration-none" href="contacto.html">Contacto</a>
-            <a class="link-light text-decoration-none" href="precios.html">Precios</a>
-          </div>
+        <div
+          class="d-flex flex-column justify-content-between align-items-center gap-3 mt-4 pt-3 border-top border-secondary-subtle"
+        >
+          <p class="mb-0">© 2026 Bootstrap. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

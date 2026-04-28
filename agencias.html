@@ -26,21 +26,21 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarAgencias">
           <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explorar</a>
               <div class="dropdown-menu mega-menu">
                 <div class="row g-3">
                   <div class="col-lg-6">
                     <h6 class="text-uppercase text-muted small">Secciones</h6>
-                    <a class="dropdown-item" href="destinos.html"><i class="bi bi-map me-2"></i>Destinos y precios</a>
+                    <a class="dropdown-item" href="destinos.html"><i class="bi bi-map me-2"></i>Destinos</a>
                     <a class="dropdown-item" href="agencias.html"><i class="bi bi-buildings me-2"></i>Agencias</a>
                     <a class="dropdown-item" href="blog.html"><i class="bi bi-newspaper me-2"></i>Blog</a>
                   </div>
                   <div class="col-lg-6">
                     <h6 class="text-uppercase text-muted small">Utilidades</h6>
                     <a class="dropdown-item" href="contacto.html"><i class="bi bi-envelope-paper me-2"></i>Contacto</a>
-                    <a class="dropdown-item" href="precios.html"><i class="bi bi-cash-coin me-2"></i>Comparativa</a>
+                    <a class="dropdown-item" href="precios.html"><i class="bi bi-cash-coin me-2"></i>Precios</a>
                     <a class="dropdown-item" href="phishing.html"><i class="bi bi-shield-check me-2"></i>Modulo educativo</a>
                   </div>
                 </div>
@@ -54,16 +54,16 @@
       </div>
     </nav>
 
-    <header class="page-header page-header-no-image">
-      <div class="container">
+    <main class="agency-stage">
+      <section class="container agency-stage-intro">
+        <div class="agency-stage-copy">
         <span class="eyebrow"><i class="bi bi-buildings"></i>Agencias</span>
-        <h1 class="display-5 fw-bold mt-3">Agencias con efecto flip y mas personalidad</h1>
-        <p class="col-lg-8 fs-5">Al pasar el cursor por cada card vas a ver una breve descripcion de la agencia, su enfoque y el tipo de experiencia que ofrece.</p>
-      </div>
-    </header>
+        <h1 class="display-5 fw-bold mt-3">Las mejores agencias de viaje para tí</h1>
+        <p class="col-lg-8 fs-5">Descubre los mejores servicios de viajes que ofrecen experiencias únicas y personalizadas para tu próximo destino.</p>
+        </div>
+      </section>
 
-    <main class="py-5 agency-stage">
-      <section class="container agency-stage-shell">
+      <section class="container agency-stage-shell pb-5">
         <div class="row g-4">
           <div class="col-md-6 col-xl-4">
             <div class="agency-flip">
@@ -171,53 +171,102 @@
       </section>
     </main>
 
-    <footer class="text-white pt-5 pb-4">
+      <footer class="text-white pt-5 pb-4">
       <div class="container">
         <div class="row g-4">
           <div class="col-lg-4">
             <div class="contact-panel p-4 h-100">
-              <h3 class="h5 text-dark mb-3"><i class="bi bi-send me-2"></i>Formulario rapido</h3>
+              <h3 class="h5 text-dark mb-3">
+                <i class="bi bi-send me-2"></i>Consultanos
+              </h3>
               <form class="footer-form">
-                <div class="mb-3"><input class="form-control" type="text" placeholder="Nombre y apellido" /></div>
-                <div class="mb-3"><input class="form-control" type="email" placeholder="Correo electronico" /></div>
-                <div class="mb-3"><select class="form-select"><option selected>Consulta por...</option><option>Paquetes</option><option>Promociones</option><option>Asistencia</option></select></div>
-                <button class="btn btn-brand rounded-pill w-100" type="button">Solicitar informacion</button>
+                <div class="mb-3">
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Nombre y apellido"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    class="form-control"
+                    type="email"
+                    placeholder="Correo electronico"
+                  />
+                </div>
+                <div class="mb-3">
+                  <select class="form-select">
+                    <option selected>Consulta por...</option>
+                    <option>Paquetes</option>
+                    <option>Promociones</option>
+                    <option>Asistencia</option>
+                  </select>
+                </div>
+                <button class="btn btn-brand rounded-pill w-100" type="button">
+                  Solicitar informacion
+                </button>
               </form>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="contact-panel p-4 h-100">
-              <h3 class="h5 text-dark mb-3"><i class="bi bi-share me-2"></i>Redes y sprite CSS</h3>
-              <p class="text-muted">Estos iconos usan una sola imagen sprite con distintas posiciones de fondo.</p>
+              <h3 class="h5 text-dark mb-3">
+                <i class="bi bi-share me-2"></i>Redes
+              </h3>
+              <p class="text-muted footer-social-copy">Visitanos en nuestras redes sociales</p>
               <div class="sprite-list mb-4">
-                <span class="sprite-icon sprite-facebook" aria-label="Facebook" tabindex="0"></span>
-                <span class="sprite-icon sprite-x" aria-label="X" tabindex="0"></span>
-                <span class="sprite-icon sprite-instagram" aria-label="Instagram" tabindex="0"></span>
-                <span class="sprite-icon sprite-linkedin" aria-label="LinkedIn" tabindex="0"></span>
+                <span
+                  class="sprite-icon sprite-facebook"
+                  aria-label="Facebook"
+                  tabindex="0"
+                ></span>
+                <span
+                  class="sprite-icon sprite-x"
+                  aria-label="X"
+                  tabindex="0"
+                ></span>
+                <span
+                  class="sprite-icon sprite-instagram"
+                  aria-label="Instagram"
+                  tabindex="0"
+                ></span>
+                <span
+                  class="sprite-icon sprite-linkedin"
+                  aria-label="LinkedIn"
+                  tabindex="0"
+                ></span>
               </div>
               <div class="d-flex gap-2 flex-wrap">
-                <a class="btn btn-outline-dark rounded-pill" href="blog.html"><i class="bi bi-newspaper me-2"></i>Blog</a>
-                <a class="btn btn-outline-dark rounded-pill" href="phishing.html"><i class="bi bi-shield-check me-2"></i>Seguridad</a>
+                <a class="btn btn-outline-dark rounded-pill" href="blog.html"
+                  ><i class="bi bi-newspaper me-2"></i>Blog</a
+                >
+                <a
+                  class="btn btn-outline-dark rounded-pill"
+                  href="phishing.html"
+                  ><i class="bi bi-shield-check me-2"></i>Seguridad</a
+                >
               </div>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="contact-panel p-2 h-100 overflow-hidden">
-              <iframe class="placeholder-map w-100" title="Mapa embebido de ejemplo" src="https://www.google.com/maps?q=San%20Salvador%20de%20Jujuy&z=12&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe
+                class="placeholder-map w-100"
+                title="Mapa embebido de ejemplo"
+                src="https://www.google.com/maps?q=San%20Salvador%20de%20Jujuy&z=12&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>
-        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 mt-4 pt-3 border-top border-secondary-subtle">
-          <p class="mb-0">BooTsTrap. Sitio responsive con iconos, sprite y seguridad basica.</p>
-          <div class="d-flex gap-3">
-            <a class="link-light text-decoration-none" href="destinos.html">Destinos</a>
-            <a class="link-light text-decoration-none" href="contacto.html">Contacto</a>
-            <a class="link-light text-decoration-none" href="precios.html">Precios</a>
-          </div>
+        <div
+          class="d-flex flex-column justify-content-between align-items-center gap-3 mt-4 pt-3 border-top border-secondary-subtle"
+        >
+          <p class="mb-0">© 2026 Bootstrap. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
-
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
