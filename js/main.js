@@ -1,4 +1,5 @@
 $(function () {
+  initThemeMode();
   initHeroText();
   initCounters();
   initDestinationFilters();
@@ -9,9 +10,75 @@ $(function () {
   initTooltips();
   initPriceHover();
   initBlogFilters();
+  initBlogLikes();
   initScrollReveal();
   initPhishingModule();
 });
+
+function initThemeMode() {
+  const storageKey = "bootstrap-theme";
+  const storedTheme = localStorage.getItem(storageKey);
+  const initialTheme =
+    storedTheme || (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+
+  function applyTheme(theme) {
+    const darkMode = theme === "dark";
+    $("body").toggleClass("dark-mode", darkMode);
+    $("html").attr("data-theme", theme);
+
+    const button = $("#themeToggle");
+    const icon = button.find("i");
+    const label = button.find(".theme-toggle-label");
+
+    if (!button.length) {
+      return;
+    }
+
+    button.attr("aria-pressed", String(darkMode));
+    button.attr("title", darkMode ? "Cambiar a modo claro" : "Cambiar a modo oscuro");
+    icon.attr("class", darkMode ? "bi bi-sun-fill" : "bi bi-moon-stars-fill");
+    label.text(darkMode ? "Modo claro" : "Modo oscuro");
+  }
+
+  function ensureToggle() {
+    if ($("#themeToggle").length) {
+      return;
+    }
+
+    const navList = $(".navbar .navbar-nav").first();
+
+    if (!navList.length) {
+      applyTheme(initialTheme);
+      return;
+    }
+
+    const toggleMarkup = `
+      <li class="nav-item mt-3 mt-lg-0 ms-lg-2">
+        <button
+          class="btn theme-toggle-button"
+          id="themeToggle"
+          type="button"
+          aria-label="Cambiar tema"
+          aria-pressed="false"
+        >
+          <i class="bi bi-moon-stars-fill" aria-hidden="true"></i>
+          <span class="theme-toggle-label">Modo oscuro</span>
+        </button>
+      </li>
+    `;
+
+    navList.append(toggleMarkup);
+    $("#themeToggle").on("click", function () {
+      const nextTheme = $("body").hasClass("dark-mode") ? "light" : "dark";
+      localStorage.setItem(storageKey, nextTheme);
+      applyTheme(nextTheme);
+    });
+    applyTheme(initialTheme);
+  }
+
+  applyTheme(initialTheme);
+  ensureToggle();
+}
 
 function sanitizeText(value) {
   return value.replace(/[<>]/g, "").replace(/\s{2,}/g, " ").trimStart();
@@ -61,7 +128,7 @@ function initDestinationFilters() {
 
     cards.each(function () {
       const matches = filter === "all" || $(this).data("category") === filter;
-      $(this)[matches ? "show" : "hide"]();
+      $(this).toggle(matches);
     });
   });
 }
@@ -204,6 +271,61 @@ function initBlogFilters() {
       const matches = filter === "all" || $(this).data("category") === filter;
       $(this)[matches ? "fadeIn" : "fadeOut"](180);
     });
+  });
+}
+
+function initBlogLikes() {
+  const cards = $(".blog-card");
+
+  if (!cards.length) {
+    return;
+  }
+
+  function setLiked(card, liked) {
+    const button = card.find(".blog-like-btn");
+    const icon = button.find("i");
+
+    card.toggleClass("is-liked", liked);
+    button.attr("aria-pressed", String(liked));
+    button.attr("aria-label", liked ? "Quitar me gusta" : "Dar me gusta");
+    icon.attr("class", liked ? "bi bi-heart-fill" : "bi bi-heart");
+  }
+
+  function burstHeart(card) {
+    const burst = card.find(".blog-heart-burst");
+
+    if (!burst.length) {
+      return;
+    }
+
+    burst.removeClass("is-animating");
+    // Force reflow so the animation can restart on repeated likes.
+    void burst[0].offsetWidth;
+    burst.addClass("is-animating");
+
+    setTimeout(function () {
+      burst.removeClass("is-animating");
+    }, 850);
+  }
+
+  $(".blog-like-btn").on("click", function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    const card = $(this).closest(".blog-card");
+    const liked = !card.hasClass("is-liked");
+
+    setLiked(card, liked);
+    if (liked) {
+      burstHeart(card);
+    }
+  });
+
+  $(".blog-card .media-frame, .blog-card .card-body").on("dblclick", function () {
+    const card = $(this).closest(".blog-card");
+
+    setLiked(card, true);
+    burstHeart(card);
   });
 }
 

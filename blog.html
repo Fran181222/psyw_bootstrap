@@ -46,7 +46,6 @@
                 </div>
               </div>
             </li>
-            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
             <li class="nav-item mt-3 mt-lg-0 ms-lg-2">
               <a class="btn btn-brand rounded-pill px-4" href="destinos.html"><i class="bi bi-airplane-engines me-2"></i>Planificar viaje</a>
             </li>
@@ -55,56 +54,153 @@
       </div>
     </nav>
 
-    <header class="page-header">
-      <div class="container">
-        <span class="eyebrow"><i class="bi bi-newspaper"></i>Blog</span>
-        <h1 class="display-5 fw-bold mt-3">Layout tipo revista con filtros y animaciones al hacer scroll</h1>
-      </div>
-    </header>
-
     <main class="py-5">
       <section class="container mb-4">
-        <div class="d-flex flex-wrap gap-2">
-          <button class="btn btn-dark blog-filter active" data-filter="all">Todos</button>
-          <button class="btn btn-outline-dark blog-filter" data-filter="tips">Tips</button>
-          <button class="btn btn-outline-dark blog-filter" data-filter="guias">Guias</button>
-          <button class="btn btn-outline-dark blog-filter" data-filter="novedades">Novedades</button>
+        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-end gap-3">
+          <div class="section-heading">
+            <span class="eyebrow text-bg-light text-dark"><i class="bi bi-newspaper"></i>Blog editorial</span>
+            <h1 class="display-6 fw-bold mt-3 mb-2">Un blog con formato revista y reacciones en cada nota</h1>
+            <p class="text-muted mb-0">Recorre las notas, filtralas por categoria y reacciona con likes directamente sobre cada card.</p>
+          </div>
+          <div class="d-flex flex-wrap gap-2">
+            <button class="btn btn-dark blog-filter active" data-filter="all">Todos</button>
+            <button class="btn btn-outline-dark blog-filter" data-filter="tips">Tips</button>
+            <button class="btn btn-outline-dark blog-filter" data-filter="guias">Guias</button>
+            <button class="btn btn-outline-dark blog-filter" data-filter="novedades">Novedades</button>
+          </div>
         </div>
       </section>
 
       <section class="container">
         <div class="magazine-grid">
-          <article class="card blog-card blog-item scroll-reveal" data-category="guias">
-            <div class="media-frame"><img src="img/placeholder-card.svg" alt="Placeholder portada revista" /></div>
+          <article class="card blog-card blog-item blog-feature-hero scroll-reveal" data-category="guias">
+            <button class="blog-like-btn" type="button" aria-label="Dar me gusta" aria-pressed="false">
+              <i class="bi bi-heart"></i>
+            </button>
+            <span class="blog-heart-burst" aria-hidden="true"><i class="bi bi-heart-fill"></i></span>
+            <div class="media-frame"><img src="img/city-love.jpg" alt="Escapada urbana de fin de semana" /></div>
             <div class="card-body p-4">
               <span class="destination-tag mb-3"><i class="bi bi-journal-richtext"></i>Guias</span>
-              <h2 class="h3">Como preparar una escapada de fin de semana</h2>
-              <p class="text-muted">Este bloque funciona como nota principal del layout editorial.</p>
+              <div class="blog-card-meta mb-3">
+                <span><i class="bi bi-clock me-1"></i>6 min</span>
+                <span><i class="bi bi-bookmark-star me-1"></i>Portada editorial</span>
+              </div>
+              <h2 class="h3">Como preparar una escapada de fin de semana sin que se te vaya el presupuesto</h2>
+              <p class="text-muted">Una nota principal con mirada de revista para resolver destino, tiempos y gastos sin perder el costado inspiracional del viaje.</p>
               <div class="comment-box p-3 rounded-4 mt-4">
-                <strong>Comentario simulado:</strong>
-                <p class="mb-0">“Muy util para mostrar entradas destacadas con diseño de revista.”</p>
+                <strong>Comentario destacado:</strong>
+                <p class="mb-0">Una portada ideal para mostrar una nota larga con peso visual y un tono mas editorial.</p>
               </div>
             </div>
           </article>
 
           <div class="magazine-stack">
-            <article class="card blog-card blog-item scroll-reveal" data-category="tips">
-              <div class="media-frame"><img src="img/placeholder-card.svg" alt="Placeholder tips viaje" /></div>
+            <article class="card blog-card blog-item blog-tall scroll-reveal" data-category="tips">
+              <button class="blog-like-btn" type="button" aria-label="Dar me gusta" aria-pressed="false">
+                <i class="bi bi-heart"></i>
+              </button>
+              <span class="blog-heart-burst" aria-hidden="true"><i class="bi bi-heart-fill"></i></span>
+              <div class="media-frame"><img src="img/europe-clasica.jpg" alt="Checklist para viajar" /></div>
               <div class="card-body p-4">
                 <span class="destination-tag mb-3"><i class="bi bi-lightbulb"></i>Tips</span>
                 <h2 class="h4">Checklist previa al viaje</h2>
-                <p class="text-muted">Ideal para mostrar contenido corto, util y rapido de leer.</p>
+                <p class="text-muted mb-0">Documentacion, equipaje, pagos y reservas en una nota corta, util y rapida de leer.</p>
               </div>
             </article>
+
             <article class="card blog-card blog-item scroll-reveal" data-category="novedades">
-              <div class="media-frame"><img src="img/placeholder-card.svg" alt="Placeholder novedades turismo" /></div>
+              <button class="blog-like-btn" type="button" aria-label="Dar me gusta" aria-pressed="false">
+                <i class="bi bi-heart"></i>
+              </button>
+              <span class="blog-heart-burst" aria-hidden="true"><i class="bi bi-heart-fill"></i></span>
+              <div class="media-frame"><img src="img/mediterraneo.jpg" alt="Tendencias de temporada" /></div>
               <div class="card-body p-4">
                 <span class="destination-tag mb-3"><i class="bi bi-megaphone"></i>Novedades</span>
                 <h2 class="h4">Tendencias y promociones de temporada</h2>
-                <p class="text-muted">Perfecto para sumar noticias, ofertas o actualizaciones del sitio.</p>
+                <p class="text-muted mb-0">Destinos con mas movimiento, rutas aspiracionales y propuestas que hoy generan mucho interes.</p>
               </div>
             </article>
           </div>
+        </div>
+
+        <div class="blog-editorial-grid">
+          <article class="card blog-card blog-item scroll-reveal" data-category="guias">
+            <button class="blog-like-btn" type="button" aria-label="Dar me gusta" aria-pressed="false">
+              <i class="bi bi-heart"></i>
+            </button>
+            <span class="blog-heart-burst" aria-hidden="true"><i class="bi bi-heart-fill"></i></span>
+            <div class="media-frame"><img src="img/paris.jpg" alt="Ciudades para caminar y descubrir" /></div>
+            <div class="card-body p-4">
+              <span class="blog-kicker mb-2"><i class="bi bi-compass"></i>Ruta urbana</span>
+              <h2 class="h4">Ciudades para caminar, mirar y dejarte sorprender</h2>
+              <p class="text-muted mb-0">Una nota pensada para destacar destinos ideales para recorrer sin apuro y con mucho contenido visual.</p>
+            </div>
+          </article>
+
+          <article class="card blog-card blog-item scroll-reveal" data-category="tips">
+            <button class="blog-like-btn" type="button" aria-label="Dar me gusta" aria-pressed="false">
+              <i class="bi bi-heart"></i>
+            </button>
+            <span class="blog-heart-burst" aria-hidden="true"><i class="bi bi-heart-fill"></i></span>
+            <div class="media-frame"><img src="img/patagonia.jpg" alt="Consejos para viajes de aventura" /></div>
+            <div class="card-body p-4">
+              <span class="blog-kicker mb-2"><i class="bi bi-backpack2"></i>Aventura</span>
+              <h2 class="h4">Que llevar a un viaje con clima variable</h2>
+              <p class="text-muted mb-0">Capas, abrigo, calzado y objetos chicos que mejoran mucho la experiencia cuando el viaje es mas activo.</p>
+            </div>
+          </article>
+
+          <article class="card blog-card blog-item scroll-reveal" data-category="novedades">
+            <button class="blog-like-btn" type="button" aria-label="Dar me gusta" aria-pressed="false">
+              <i class="bi bi-heart"></i>
+            </button>
+            <span class="blog-heart-burst" aria-hidden="true"><i class="bi bi-heart-fill"></i></span>
+            <div class="media-frame"><img src="img/barcelona.jpg" alt="Nueva seleccion de escapadas" /></div>
+            <div class="card-body p-4">
+              <span class="blog-kicker mb-2"><i class="bi bi-stars"></i>Actualizacion</span>
+              <h2 class="h4">Escapadas urbanas que estan marcando la temporada</h2>
+              <p class="text-muted mb-0">Destinos con buen movimiento cultural, gastronomia fuerte y mucho potencial para inspirar nuevas salidas.</p>
+            </div>
+          </article>
+
+          <article class="card blog-card blog-item scroll-reveal" data-category="guias">
+            <button class="blog-like-btn" type="button" aria-label="Dar me gusta" aria-pressed="false">
+              <i class="bi bi-heart"></i>
+            </button>
+            <span class="blog-heart-burst" aria-hidden="true"><i class="bi bi-heart-fill"></i></span>
+            <div class="media-frame"><img src="img/japon.jpg" alt="Viajes largos con itinerario claro" /></div>
+            <div class="card-body p-4">
+              <span class="blog-kicker mb-2"><i class="bi bi-globe-asia-australia"></i>Larga distancia</span>
+              <h2 class="h4">Como ordenar un itinerario cuando el viaje es mas largo</h2>
+              <p class="text-muted mb-0">Una guia para distribuir dias, traslados y descansos sin que el recorrido se vuelva agotador.</p>
+            </div>
+          </article>
+
+          <article class="card blog-card blog-item scroll-reveal" data-category="tips">
+            <button class="blog-like-btn" type="button" aria-label="Dar me gusta" aria-pressed="false">
+              <i class="bi bi-heart"></i>
+            </button>
+            <span class="blog-heart-burst" aria-hidden="true"><i class="bi bi-heart-fill"></i></span>
+            <div class="media-frame"><img src="img/caribe.jpg" alt="Consejos para un viaje relajado" /></div>
+            <div class="card-body p-4">
+              <span class="blog-kicker mb-2"><i class="bi bi-brightness-high"></i>Relax</span>
+              <h2 class="h4">Pequenos detalles que mejoran un viaje de descanso</h2>
+              <p class="text-muted mb-0">Reservas, horarios, ubicacion y comodidades que hacen que el plan se sienta realmente liviano.</p>
+            </div>
+          </article>
+
+          <article class="card blog-card blog-item scroll-reveal" data-category="novedades">
+            <button class="blog-like-btn" type="button" aria-label="Dar me gusta" aria-pressed="false">
+              <i class="bi bi-heart"></i>
+            </button>
+            <span class="blog-heart-burst" aria-hidden="true"><i class="bi bi-heart-fill"></i></span>
+            <div class="media-frame"><img src="img/viñedo.jpg" alt="Turismo gastronomico y escapadas" /></div>
+            <div class="card-body p-4">
+              <span class="blog-kicker mb-2"><i class="bi bi-cup-hot"></i>Gourmet</span>
+              <h2 class="h4">Rutas gastronomicas y escapadas que vienen creciendo</h2>
+              <p class="text-muted mb-0">Una nota breve para sumar variedad al blog con un perfil mas sensorial y relajado.</p>
+            </div>
+          </article>
         </div>
       </section>
     </main>

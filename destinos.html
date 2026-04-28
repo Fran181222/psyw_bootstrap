@@ -52,7 +52,6 @@
                 </div>
               </div>
             </li>
-            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
             <li class="nav-item mt-3 mt-lg-0 ms-lg-2">
               <a class="btn btn-brand rounded-pill px-4" href="destinos.html"><i class="bi bi-airplane-engines me-2"></i>Planificar viaje</a>
             </li>
@@ -64,13 +63,21 @@
     <header class="page-header">
       <div class="container">
         <span class="eyebrow"><i class="bi bi-map"></i>Destinos</span>
-        <h1 class="display-5 fw-bold mt-3">Te ofrecemos una amplia selección de destinos para tu próximo viaje</h1>
+        <h1 class="display-5 fw-bold mt-3">Te ofrecemos una amplia seleccion de destinos para tu proximo viaje</h1>
         <p class="col-lg-8 fs-5">Descubre los mejores lugares para visitar, con opciones para todos los gustos y presupuestos.</p>
       </div>
     </header>
 
     <main class="py-5">
       <section class="container">
+        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-end gap-3 mb-4">
+          <div class="section-heading">
+            <span class="eyebrow text-bg-light text-dark"><i class="bi bi-pin-map"></i>Inspiracion</span>
+            <h2 class="display-6 fw-bold mt-3 mb-2">Explora destinos en un muro estilo Pinterest</h2>
+            <p class="text-muted mb-0">Distintas alturas, foco visual fuerte y acceso rapido a ideas para viajes nacionales, internacionales y de aventura.</p>
+          </div>
+        </div>
+
         <div class="d-flex flex-wrap gap-2 mb-4">
           <button class="btn btn-primary filter-chip active" data-filter="all">Todos</button>
           <button class="btn btn-outline-primary filter-chip" data-filter="nacional">Nacionales</button>
@@ -78,124 +85,172 @@
           <button class="btn btn-outline-primary filter-chip" data-filter="aventura">Aventura</button>
         </div>
 
-        <div class="row g-4">
-          <div class="col-12 col-md-6 col-xl-4 filter-item" data-category="nacional">
-            <article class="card destination-card h-100">
-              <div class="media-frame"><img src="img/cataratas.jpg" alt="Cataratas del Iguazú" /></div>
+        <div class="destinations-masonry">
+          <div class="masonry-item filter-item" data-category="nacional">
+            <article class="card destination-card destination-card--pinterest" style="--destination-aspect: 4 / 5">
+              <div class="media-frame"><img src="img/cataratas.jpg" alt="Cataratas del Iguazu" /></div>
               <div class="card-body p-4">
-                <h2 class="h4">Cataratas del Iguazú</h2>
-                <p class="text-muted">Turismo cultural y paisajes del noreste argentino.</p>
-                <span class="destination-tag"><i class="bi bi-signpost-split"></i>Nacional</span>
+                <div class="destination-meta">
+                  <span class="destination-tag"><i class="bi bi-signpost-split"></i>Nacional</span>
+                  <span class="destination-price"><i class="bi bi-wallet2"></i>Desde $280.000</span>
+                </div>
+                <h2 class="h4">Cataratas del Iguazu</h2>
+                <p class="text-muted mb-0">Turismo cultural, selva subtropical y una escapada visualmente impactante para quienes quieren naturaleza con buena infraestructura.</p>
+                <a class="btn btn-outline-primary rounded-pill" href="contacto.html">Quiero cotizar</a>
               </div>
             </article>
           </div>
-          <div class="col-12 col-md-6 col-xl-4 filter-item" data-category="aventura">
-            <article class="card destination-card h-100">
+          <div class="masonry-item filter-item" data-category="aventura">
+            <article class="card destination-card destination-card--pinterest" style="--destination-aspect: 4 / 3">
               <div class="media-frame"><img src="img/patagonia.jpg" alt="Patagonia aventura" /></div>
               <div class="card-body p-4">
+                <div class="destination-meta">
+                  <span class="destination-tag"><i class="bi bi-tree"></i>Aventura</span>
+                  <span class="destination-price"><i class="bi bi-wallet2"></i>Desde $540.000</span>
+                </div>
                 <h2 class="h4">Patagonia aventura</h2>
-                <p class="text-muted">Trekking, glaciares y escapadas de naturaleza.</p>
-                <span class="destination-tag"><i class="bi bi-tree"></i>Aventura</span>
+                <p class="text-muted mb-0">Trekking, glaciares y salidas de alta energia para quienes buscan frio, paisajes enormes y experiencias outdoor.</p>
+                <a class="btn btn-outline-primary rounded-pill" href="contacto.html">Ver propuesta</a>
               </div>
             </article>
           </div>
-          <div class="col-12 col-md-6 col-xl-4 filter-item" data-category="internacional">
-            <article class="card destination-card h-100">
-              <div class="media-frame"><img src="img/europe-clasica.jpg" alt="Placeholder Europa" /></div>
+          <div class="masonry-item filter-item" data-category="internacional">
+            <article class="card destination-card destination-card--pinterest" style="--destination-aspect: 1 / 1">
+              <div class="media-frame"><img src="img/europe-clasica.jpg" alt="Europa clasica" /></div>
               <div class="card-body p-4">
+                <div class="destination-meta">
+                  <span class="destination-tag"><i class="bi bi-globe-europe-africa"></i>Internacional</span>
+                  <span class="destination-price"><i class="bi bi-wallet2"></i>USD 2.150</span>
+                </div>
                 <h2 class="h4">Europa clasica</h2>
-                <p class="text-muted">Perfecta para circuitos urbanos, museos y salidas internacionales.</p>
-                <span class="destination-tag"><i class="bi bi-globe-europe-africa"></i>Internacional</span>
+                <p class="text-muted mb-0">Circuitos urbanos, museos y capitales iconicas pensadas para un viaje bien armado y muy compartible.</p>
+                <a class="btn btn-outline-primary rounded-pill" href="contacto.html">Armar itinerario</a>
               </div>
             </article>
           </div>
-          <div class="col-12 col-md-6 col-xl-4 filter-item" data-category="internacional">
-            <article class="card destination-card h-100">
-              <div class="media-frame"><img src="img/city-love.jpg" alt="Ciudad del Amor" /></div>
+          <div class="masonry-item filter-item" data-category="internacional">
+            <article class="card destination-card destination-card--pinterest" style="--destination-aspect: 3 / 4">
+              <div class="media-frame"><img src="img/city-love.jpg" alt="Ciudad del amor" /></div>
               <div class="card-body p-4">
+                <div class="destination-meta">
+                  <span class="destination-tag"><i class="bi bi-heart"></i>Escapada romantica</span>
+                  <span class="destination-price"><i class="bi bi-wallet2"></i>USD 1.980</span>
+                </div>
                 <h2 class="h4">Ciudad del Amor</h2>
-                <p class="text-muted">Ideal para parejas que buscan una experiencia romántica y memorable.</p>
-                <span class="destination-tag"><i class="bi bi-water"></i>Internacional</span>
+                <p class="text-muted mb-0">Una opcion pensada para parejas que quieren cenas, paseos urbanos, fotos memorables y una experiencia mas intima.</p>
+                <a class="btn btn-outline-primary rounded-pill" href="contacto.html">Reservar idea</a>
               </div>
             </article>
           </div>
-          <div class="col-12 col-md-6 col-xl-4 filter-item" data-category="internacional">
-            <article class="card destination-card h-100">
+          <div class="masonry-item filter-item" data-category="internacional">
+            <article class="card destination-card destination-card--pinterest" style="--destination-aspect: 5 / 4">
               <div class="media-frame"><img src="img/caribe.jpg" alt="Caribe premium" /></div>
               <div class="card-body p-4">
-                <h2 class="h4">El Caribe </h2>
-                <p class="text-muted">Playas, estadias y actividades acuáticas.</p>
-                <span class="destination-tag"><i class="bi bi-brightness-high"></i>Internacional</span>
+                <div class="destination-meta">
+                  <span class="destination-tag"><i class="bi bi-brightness-high"></i>Internacional</span>
+                  <span class="destination-price"><i class="bi bi-wallet2"></i>USD 2.420</span>
+                </div>
+                <h2 class="h4">El Caribe</h2>
+                <p class="text-muted mb-0">Playas, estadias premium y actividades acuaticas para quien busca un viaje suave, luminoso y muy disfrutable.</p>
+                <a class="btn btn-outline-primary rounded-pill" href="contacto.html">Consultar fechas</a>
               </div>
             </article>
           </div>
-          <div class="col-12 col-md-6 col-xl-4 filter-item" data-category="aventura">
-            <article class="card destination-card h-100">
-              <div class="media-frame"><img src="img/montaña.jpg" alt="Placeholder montaña" /></div>
+          <div class="masonry-item filter-item" data-category="aventura">
+            <article class="card destination-card destination-card--pinterest" style="--destination-aspect: 4 / 5">
+              <div class="media-frame"><img src="img/montaña.jpg" alt="Montana" /></div>
               <div class="card-body p-4">
-                <h2 class="h4">Montaña</h2>
-                <p class="text-muted">Ideal para excursiones, senderismo y experiencias activas.</p>
-                <span class="destination-tag"><i class="bi bi-activity"></i>Aventura</span>
+                <div class="destination-meta">
+                  <span class="destination-tag"><i class="bi bi-activity"></i>Aventura</span>
+                  <span class="destination-price"><i class="bi bi-wallet2"></i>Desde $460.000</span>
+                </div>
+                <h2 class="h4">Montana</h2>
+                <p class="text-muted mb-0">Excursiones, senderismo y desniveles reales para viajeros que prefieren moverse y sumar aventura al itinerario.</p>
+                <a class="btn btn-outline-primary rounded-pill" href="contacto.html">Ver salida</a>
               </div>
             </article>
           </div>
-          <div class="col-12 col-md-6 col-xl-4 filter-item" data-category="nacional">
-            <article class="card destination-card h-100">
-              <div class="media-frame"><img src="img/sierra.jpg" alt="Placeholder sierras" /></div>
+          <div class="masonry-item filter-item" data-category="nacional">
+            <article class="card destination-card destination-card--pinterest" style="--destination-aspect: 5 / 4">
+              <div class="media-frame"><img src="img/sierra.jpg" alt="Sierras y descanso" /></div>
               <div class="card-body p-4">
+                <div class="destination-meta">
+                  <span class="destination-tag"><i class="bi bi-house-heart"></i>Nacional</span>
+                  <span class="destination-price"><i class="bi bi-wallet2"></i>Desde $230.000</span>
+                </div>
                 <h2 class="h4">Sierras y descanso</h2>
-                <p class="text-muted">Perfecta para escapadas tranquilas, cabanas y turismo regional.</p>
-                <span class="destination-tag"><i class="bi bi-house-heart"></i>Nacional</span>
+                <p class="text-muted mb-0">Cabanas, aire limpio y turismo regional en una propuesta relajada para cortar la rutina sin irse tan lejos.</p>
+                <a class="btn btn-outline-primary rounded-pill" href="contacto.html">Pedir opciones</a>
               </div>
             </article>
           </div>
-          <div class="col-12 col-md-6 col-xl-4 filter-item" data-category="internacional">
-            <article class="card destination-card h-100">
-              <div class="media-frame"><img src="img/asia.jpg" alt="Placeholder Asia" /></div>
+          <div class="masonry-item filter-item" data-category="internacional">
+            <article class="card destination-card destination-card--pinterest" style="--destination-aspect: 4 / 3">
+              <div class="media-frame"><img src="img/asia.jpg" alt="Asia urbana" /></div>
               <div class="card-body p-4">
+                <div class="destination-meta">
+                  <span class="destination-tag"><i class="bi bi-globe-central-south-asia"></i>Internacional</span>
+                  <span class="destination-price"><i class="bi bi-wallet2"></i>USD 2.980</span>
+                </div>
                 <h2 class="h4">Asia urbana</h2>
-                <p class="text-muted">Lista para circuitos modernos, neon, cultura y experiencias gastronomicas.</p>
-                <span class="destination-tag"><i class="bi bi-globe-central-south-asia"></i>Internacional</span>
+                <p class="text-muted mb-0">Circuitos modernos, neon, mercados y cultura gastronomica para quienes quieren ciudad intensa y muchisimo contraste visual.</p>
+                <a class="btn btn-outline-primary rounded-pill" href="contacto.html">Cotizar ruta</a>
               </div>
             </article>
           </div>
-          <div class="col-12 col-md-6 col-xl-4 filter-item" data-category="aventura">
-            <article class="card destination-card h-100">
-              <div class="media-frame"><img src="img/selva.jpg" alt="Placeholder Selva" /></div>
+          <div class="masonry-item filter-item" data-category="aventura">
+            <article class="card destination-card destination-card--pinterest" style="--destination-aspect: 3 / 4">
+              <div class="media-frame"><img src="img/selva.jpg" alt="Selva profunda" /></div>
               <div class="card-body p-4">
+                <div class="destination-meta">
+                  <span class="destination-tag"><i class="bi bi-binoculars"></i>Aventura</span>
+                  <span class="destination-price"><i class="bi bi-wallet2"></i>Desde $390.000</span>
+                </div>
                 <h2 class="h4">Selva profunda</h2>
-                <p class="text-muted">Espacio para actividades de ecoturismo, travesias y experiencias intensas.</p>
-                <span class="destination-tag"><i class="bi bi-binoculars"></i>Aventura</span>
+                <p class="text-muted mb-0">Ecoturismo, travesias y recorridos inmersivos para quien quiere una experiencia intensa y mas cruda.</p>
+                <a class="btn btn-outline-primary rounded-pill" href="contacto.html">Explorar plan</a>
               </div>
             </article>
           </div>
-          <div class="col-12 col-md-6 col-xl-4 filter-item" data-category="internacional">
-            <article class="card destination-card h-100">
-              <div class="media-frame"><img src="img/mediterraneo.jpg" alt="Placeholder Mediterraneo" /></div>
+          <div class="masonry-item filter-item" data-category="internacional">
+            <article class="card destination-card destination-card--pinterest" style="--destination-aspect: 1 / 1">
+              <div class="media-frame"><img src="img/mediterraneo.jpg" alt="Mediterraneo azul" /></div>
               <div class="card-body p-4">
+                <div class="destination-meta">
+                  <span class="destination-tag"><i class="bi bi-water"></i>Internacional</span>
+                  <span class="destination-price"><i class="bi bi-wallet2"></i>USD 2.640</span>
+                </div>
                 <h2 class="h4">Mediterraneo azul</h2>
-                <p class="text-muted">Ideal para sumar cruceros, islas, playas o rutas historicas junto al mar.</p>
-                <span class="destination-tag"><i class="bi bi-water"></i>Internacional</span>
+                <p class="text-muted mb-0">Cruceros, islas, playas y rutas historicas junto al mar en una propuesta muy aspiracional y elegante.</p>
+                <a class="btn btn-outline-primary rounded-pill" href="contacto.html">Quiero saber mas</a>
               </div>
             </article>
           </div>
-          <div class="col-12 col-md-6 col-xl-4 filter-item" data-category="nacional">
-            <article class="card destination-card h-100">
-              <div class="media-frame"><img src="img/viñedo.jpg" alt="Placeholder Vino" /></div>
+          <div class="masonry-item filter-item" data-category="nacional">
+            <article class="card destination-card destination-card--pinterest" style="--destination-aspect: 4 / 5">
+              <div class="media-frame"><img src="img/viñedo.jpg" alt="Ruta del vino" /></div>
               <div class="card-body p-4">
+                <div class="destination-meta">
+                  <span class="destination-tag"><i class="bi bi-cup-straw"></i>Nacional</span>
+                  <span class="destination-price"><i class="bi bi-wallet2"></i>Desde $310.000</span>
+                </div>
                 <h2 class="h4">Ruta del vino</h2>
-                <p class="text-muted">Preparada para promocionar bodegas, relax y turismo gastronomico.</p>
-                <span class="destination-tag"><i class="bi bi-cup-straw"></i>Nacional</span>
+                <p class="text-muted mb-0">Bodegas, relax y turismo gastronomico para escapadas con mas calma, paisaje y disfrute culinario.</p>
+                <a class="btn btn-outline-primary rounded-pill" href="contacto.html">Consultar bodega</a>
               </div>
             </article>
           </div>
-          <div class="col-12 col-md-6 col-xl-4 filter-item" data-category="aventura">
-            <article class="card destination-card h-100">
-              <div class="media-frame"><img src="img/desierto.jpg" alt="Placeholder Desierto" /></div>
+          <div class="masonry-item filter-item" data-category="aventura">
+            <article class="card destination-card destination-card--pinterest" style="--destination-aspect: 5 / 4">
+              <div class="media-frame"><img src="img/desierto.jpg" alt="Desierto extremo" /></div>
               <div class="card-body p-4">
+                <div class="destination-meta">
+                  <span class="destination-tag"><i class="bi bi-fire"></i>Aventura</span>
+                  <span class="destination-price"><i class="bi bi-wallet2"></i>Desde $350.000</span>
+                </div>
                 <h2 class="h4">Desierto extremo</h2>
-                <p class="text-muted">Una opcion ideal para aventuras en entornos áridos.</p>
-                <span class="destination-tag"><i class="bi bi-fire"></i>Aventura</span>
+                <p class="text-muted mb-0">Una opcion pensada para paisajes aridos, cielos amplios y recorridos con una personalidad visual muy marcada.</p>
+                <a class="btn btn-outline-primary rounded-pill" href="contacto.html">Armar salida</a>
               </div>
             </article>
           </div>
@@ -221,7 +276,7 @@
             <tbody>
               <tr>
                 <td>Quebrada de Humahuaca</td>
-                <td>Todo el año</td>
+                <td>Todo el ano</td>
                 <td>3 noches</td>
                 <td>$280.000</td>
                 <td>Hotel + desayuno</td>
@@ -270,7 +325,7 @@
           <div class="col-lg-4">
             <div class="contact-panel p-4 h-100">
               <h3 class="h5 text-dark mb-3"><i class="bi bi-share me-2"></i>Redes</h3>
-              <p class="text-muted">Visítanos en nuestras redes sociales</p>
+              <p class="text-muted">Visitanos en nuestras redes sociales</p>
               <div class="sprite-list mb-4">
                 <span class="sprite-icon sprite-facebook" aria-label="Facebook" tabindex="0"></span>
                 <span class="sprite-icon sprite-x" aria-label="X" tabindex="0"></span>
